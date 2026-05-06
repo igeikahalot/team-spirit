@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+
+{% block title %}Партнёры{% endblock %}
+
+{% block content %}
+<!-- Header -->
+<section class="py-20 bg-spirit-darker">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="font-heading text-4xl md:text-5xl font-bold mb-4">
+            <span class="text-gradient-gold">НАШИ ПАРТНЁРЫ</span>
+        </h1>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+            Благодарим наших партнёров и спонсоров за поддержку
+        </p>
+    </div>
+</section>
+
+<!-- Title Sponsors -->
+{% if title_sponsors %}
+<section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-heading text-2xl font-bold text-center mb-10">
+            <span class="text-spirit-gold">ТИТУЛЬНЫЕ СПОНСОРЫ</span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {% for partner in title_sponsors %}
+            <a href="{{ partner.website }}" target="_blank" class="card-hover bg-spirit-gray rounded-xl p-8 border border-spirit-gold/30 hover:border-spirit-gold">
+                <div class="flex items-center gap-6">
+                    <div class="w-24 h-24 bg-spirit-light rounded-xl flex items-center justify-center flex-shrink-0">
+                        {% if partner.logo %}
+                        <img src="{{ partner.logo.url }}" alt="{{ partner.name }}" class="max-w-full max-h-full p-2">
+                        {% else %}
+                        <span class="font-heading text-2xl text-gray-500">{{ partner.name|slice:":2"|upper }}</span>
+                        {% endif %}
+                    </div>
+                    <div>
+                        <h3 class="font-heading text-xl font-bold mb-2">{{ partner.name }}</h3>
+                        {% if partner.description %}
+                        <p class="text-gray-400 text-sm">{{ partner.description }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- Main Partners -->
+{% if main_partners %}
+<section class="py-16 bg-spirit-darker">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-heading text-2xl font-bold text-center mb-10">ГЛАВНЫЕ ПАРТНЁРЫ</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {% for partner in main_partners %}
+            <a href="{{ partner.website }}" target="_blank" class="card-hover bg-spirit-gray rounded-xl p-6 border border-spirit-light hover:border-spirit-gold/50">
+                <div class="h-20 flex items-center justify-center mb-4">
+                    {% if partner.logo %}
+                    <img src="{{ partner.logo.url }}" alt="{{ partner.name }}" class="max-h-full max-w-full">
+                    {% else %}
+                    <span class="font-heading text-2xl text-gray-500">{{ partner.name }}</span>
+                    {% endif %}
+                </div>
+                <h3 class="font-heading text-lg font-bold text-center">{{ partner.name }}</h3>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- Official Partners -->
+{% if official_partners %}
+<section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-heading text-2xl font-bold text-center mb-10">ОФИЦИАЛЬНЫЕ ПАРТНЁРЫ</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {% for partner in official_partners %}
+            <a href="{{ partner.website }}" target="_blank" class="card-hover bg-spirit-gray rounded-xl p-6 border border-spirit-light hover:border-spirit-gold/50 flex items-center justify-center">
+                <div class="h-16 flex items-center justify-center">
+                    {% if partner.logo %}
+                    <img src="{{ partner.logo.url }}" alt="{{ partner.name }}" class="max-h-full max-w-full opacity-70 hover:opacity-100 transition-opacity">
+                    {% else %}
+                    <span class="text-gray-500 font-medium">{{ partner.name }}</span>
+                    {% endif %}
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- Technical Partners -->
+{% if technical_partners %}
+<section class="py-16 bg-spirit-darker">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-heading text-2xl font-bold text-center mb-10">ТЕХНИЧЕСКИЕ ПАРТНЁРЫ</h2>
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+            {% for partner in technical_partners %}
+            <a href="{{ partner.website }}" target="_blank" class="bg-spirit-gray rounded-xl p-4 border border-spirit-light hover:border-spirit-gold/30 flex items-center justify-center transition-colors">
+                <div class="h-12 flex items-center justify-center">
+                    {% if partner.logo %}
+                    <img src="{{ partner.logo.url }}" alt="{{ partner.name }}" class="max-h-full max-w-full opacity-60 hover:opacity-100 transition-opacity">
+                    {% else %}
+                    <span class="text-gray-500 text-sm">{{ partner.name }}</span>
+                    {% endif %}
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- Contact CTA -->
+<section class="py-20">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="font-heading text-2xl font-bold mb-4">Стать партнёром</h2>
+        <p class="text-gray-400 mb-8">
+            Заинтересованы в сотрудничестве с Team Spirit? Свяжитесь с нами для обсуждения партнёрства.
+        </p>
+        <a href="mailto:partners@teamspirit.ru" class="inline-flex items-center px-6 py-3 gradient-gold text-spirit-dark font-heading font-bold rounded-lg hover:opacity-90 transition-opacity">
+            Связаться с нами
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+        </a>
+    </div>
+</section>
+{% endblock %}

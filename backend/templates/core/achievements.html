@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+
+{% block title %}Достижения{% endblock %}
+
+{% block content %}
+<!-- Header -->
+<section class="py-20 bg-spirit-darker">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="font-heading text-4xl md:text-5xl font-bold mb-4">
+            <span class="text-gradient-gold">ДОСТИЖЕНИЯ</span>
+        </h1>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-8">
+            Победы и успехи Team Spirit на турнирах
+        </p>
+        
+        <!-- Stats -->
+        <div class="flex justify-center gap-12">
+            <div class="text-center">
+                <div class="text-4xl font-heading font-bold text-spirit-gold">${{ total_prize|floatformat:0 }}</div>
+                <div class="text-gray-400 text-sm uppercase tracking-wider">Общие призовые</div>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl font-heading font-bold text-yellow-500">{{ first_places }}</div>
+                <div class="text-gray-400 text-sm uppercase tracking-wider">Первых мест</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Filters -->
+<section class="py-8 border-b border-spirit-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap gap-4">
+            <a href="{% url 'core:achievements' %}" class="px-4 py-2 rounded-lg text-sm font-medium {% if not request.GET.discipline %}bg-spirit-gold text-spirit-dark{% else %}bg-spirit-gray text-gray-300 hover:bg-spirit-light{% endif %}">
+                Все дисциплины
+            </a>
+            {% for discipline in disciplines %}
+            <a href="?discipline={{ discipline.slug }}" class="px-4 py-2 rounded-lg text-sm font-medium {% if request.GET.discipline == discipline.slug %}bg-spirit-gold text-spirit-dark{% else %}bg-spirit-gray text-gray-300 hover:bg-spirit-light{% endif %}">
+                {{ discipline.name }}
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Achievements Grid -->
+<section class="py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for achievement in achievements %}
+            <div class="card-hover bg-spirit-gray rounded-xl overflow-hidden border border-spirit-light hover:border-spirit-gold/50">
+                <!-- Achievement Image -->
+                {% if achievement.image %}
+                <div class="aspect-video bg-spirit-light">
+                    <img src="{{ achievement.image.url }}" alt="{{ achievement.title }}" class="w-full h-full object-cover">
+                </div>
+                {% endif %}
+                
+                <!-- Medal Header -->
+                <div class="p-6 {% if achievement.place == 1 %}bg-gradient-to-r from-yellow-600/20 to-yellow-500/10{% elif achievement.place == 2 %}bg-gradient-to-r from-gray-500/20 to-gray-400/10{% elif achievement.place == 3 %}bg-gradient-to-r from-amber-700/20 to-amber-600/10{% endif %}">
+                    <div class="flex items-start justify-between">
+                        <div class="w-16 h-16 {% if achievement.place == 1 %}bg-yellow-500{% elif achievement.place == 2 %}bg-gray-400{% elif achievement.place == 3 %}bg-amber-700{% else %}bg-spirit-light{% endif %} rounded-xl flex items-center justify-center">
+                            {% if achievement.place <= 3 %}
+                            <svg class="w-8 h-8 text-spirit-dark" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                            </svg>
+                            {% else %}
+                            <span class="font-heading font-bold text-gray-600 text-xl">{{ achievement.place }}</span>
+                            {% endif %}
+                        </div>
+                        <div class="text-right">
+                            <div class="font-heading font-bold text-2xl {% if achievement.place == 1 %}text-yellow-500{% elif achievement.place == 2 %}text-gray-400{% elif achievement.place == 3 %}text-amber-600{% else %}text-gray-400{% endif %}">
+                                {{ achievement.get_place_display }}
+                            </div>
+                            <div class="text-spirit-gold font-medium">${{ achievement.prize_won|floatformat:0 }}</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Content -->
+                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="px-2 py-1 bg-spirit-light text-gray-400 text-xs rounded">{{ achievement.discipline.name }}</span>
+                        <span class="text-gray-500 text-xs">{{ achievement.date|date:"M Y" }}</span>
+                    </div>
+                    <h3 class="font-heading text-lg font-bold mb-2">{{ achievement.title }}</h3>
+                    {% if achievement.description %}
+                    <p class="text-gray-400 text-sm">{{ achievement.description|truncatewords:20 }}</p>
+                    {% endif %}
+                    <div class="mt-4 pt-4 border-t border-spirit-light">
+                        <div class="text-xs text-gray-500">
+                            Призовой фонд: <span class="text-gray-400">${{ achievement.prize_pool|floatformat:0 }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <div class="col-span-3 text-center py-16 text-gray-500">
+                <svg class="w-16 h-16 mx-auto mb-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                </svg>
+                Достижения не найдены
+            </div>
+            {% endfor %}
+        </div>
+        
+        <!-- Pagination -->
+        {% if page_obj.has_other_pages %}
+        <div class="flex justify-center mt-12 gap-2">
+            {% if page_obj.has_previous %}
+            <a href="?page={{ page_obj.previous_page_number }}" class="px-4 py-2 bg-spirit-gray rounded-lg hover:bg-spirit-light">Назад</a>
+            {% endif %}
+            <span class="px-4 py-2 text-gray-400">
+                Страница {{ page_obj.number }} из {{ page_obj.paginator.num_pages }}
+            </span>
+            {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}" class="px-4 py-2 bg-spirit-gray rounded-lg hover:bg-spirit-light">Далее</a>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}

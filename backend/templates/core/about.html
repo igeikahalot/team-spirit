@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+
+{% block title %}О нас{% endblock %}
+
+{% block content %}
+<!-- Hero -->
+<section class="py-20 bg-spirit-darker relative overflow-hidden">
+    {% if team_info and team_info.banner %}
+    <div class="absolute inset-0">
+        <img src="{{ team_info.banner.url }}" alt="Team Spirit" class="w-full h-full object-cover opacity-20">
+    </div>
+    {% else %}
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-spirit-gold rounded-full filter blur-3xl"></div>
+    </div>
+    {% endif %}
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-3xl mx-auto text-center">
+            {% if team_info and team_info.logo %}
+            <div class="w-24 h-24 mx-auto mb-6">
+                <img src="{{ team_info.logo.url }}" alt="Team Spirit Logo" class="w-full h-full object-contain">
+            </div>
+            {% endif %}
+            <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                <span class="text-gradient-gold">О TEAM SPIRIT</span>
+            </h1>
+            <p class="text-xl text-gray-300 leading-relaxed">
+                Российская киберспортивная организация, основанная в 2015 году. 
+                Чемпионы The International 2021 по Dota 2.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Stats -->
+<section class="py-16 bg-spirit-gray">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="text-center">
+                <div class="text-4xl md:text-5xl font-heading font-bold text-spirit-gold mb-2">
+                    {% if team_info %}{{ team_info.founded_year }}{% else %}2015{% endif %}
+                </div>
+                <div class="text-gray-400 text-sm uppercase tracking-wider">Год основания</div>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl md:text-5xl font-heading font-bold text-spirit-gold mb-2">
+                    ${{ stats.total_earnings|floatformat:0|default:"18M+" }}
+                </div>
+                <div class="text-gray-400 text-sm uppercase tracking-wider">Призовые</div>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl md:text-5xl font-heading font-bold text-spirit-gold mb-2">
+                    {{ stats.tournaments_won|default:"15+" }}
+                </div>
+                <div class="text-gray-400 text-sm uppercase tracking-wider">Турниров выиграно</div>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl md:text-5xl font-heading font-bold text-spirit-gold mb-2">
+                    {{ stats.disciplines_count|default:"5" }}
+                </div>
+                <div class="text-gray-400 text-sm uppercase tracking-wider">Дисциплин</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Content -->
+<section class="py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-invert prose-lg max-w-none">
+            {% if team_info and team_info.about %}
+            {{ team_info.about|linebreaks }}
+            {% else %}
+            <p>
+                Team Spirit — одна из самых успешных киберспортивных организаций России и СНГ. 
+                Организация была основана в 2015 году и с тех пор завоевала множество престижных титулов 
+                в различных игровых дисциплинах.
+            </p>
+            <p>
+                Главным достижением Team Spirit является победа на The International 2021 — крупнейшем 
+                турнире по Dota 2 с призовым фондом более $40 миллионов. Эта победа стала историческим 
+                моментом для российского киберспорта.
+            </p>
+            <p>
+                Сегодня Team Spirit представлен в нескольких ведущих киберспортивных дисциплинах: 
+                Dota 2, Counter-Strike 2 и других играх. Организация продолжает развиваться, 
+                привлекая талантливых игроков и создавая условия для их роста.
+            </p>
+            <h2>Наши ценности</h2>
+            <ul>
+                <li><strong>Командный дух</strong> — мы верим в силу командной работы и взаимной поддержки</li>
+                <li><strong>Стремление к победе</strong> — мы всегда нацелены на достижение максимальных результатов</li>
+                <li><strong>Развитие</strong> — мы постоянно учимся и совершенствуемся</li>
+                <li><strong>Профессионализм</strong> — мы подходим к киберспорту как к серьёзной профессии</li>
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="py-16 bg-spirit-darker">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="font-heading text-3xl font-bold mb-4">Связаться с нами</h2>
+            <p class="text-gray-400">По вопросам сотрудничества и другим вопросам</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-spirit-gray rounded-xl p-6 border border-spirit-light">
+                <h3 class="font-heading text-lg font-bold mb-4">Контакты</h3>
+                <div class="space-y-4">
+                    <div>
+                        <div class="text-gray-500 text-sm mb-1">Email</div>
+                        <a href="mailto:{% if team_info %}{{ team_info.contact_email }}{% else %}info@teamspirit.ru{% endif %}" class="text-spirit-gold hover:underline">
+                            {% if team_info and team_info.contact_email %}{{ team_info.contact_email }}{% else %}info@teamspirit.ru{% endif %}
+                        </a>
+                    </div>
+                    <div>
+                        <div class="text-gray-500 text-sm mb-1">Штаб-квартира</div>
+                        <p>{% if team_info %}{{ team_info.headquarters }}{% else %}Москва, Россия{% endif %}</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-spirit-gray rounded-xl p-6 border border-spirit-light">
+                <h3 class="font-heading text-lg font-bold mb-4">Социальные сети</h3>
+                <div class="grid grid-cols-3 gap-4">
+                    <a href="{% if team_info %}{{ team_info.twitter }}{% else %}#{% endif %}" target="_blank" class="flex flex-col items-center p-4 bg-spirit-light rounded-lg hover:bg-spirit-gold hover:text-spirit-dark transition-colors">
+                        <svg class="w-6 h-6 mb-2" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        <span class="text-sm">Twitter</span>
+                    </a>
+                    <a href="{% if team_info %}{{ team_info.youtube }}{% else %}#{% endif %}" target="_blank" class="flex flex-col items-center p-4 bg-spirit-light rounded-lg hover:bg-spirit-gold hover:text-spirit-dark transition-colors">
+                        <svg class="w-6 h-6 mb-2" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        <span class="text-sm">YouTube</span>
+                    </a>
+                    <a href="{% if team_info %}{{ team_info.telegram }}{% else %}#{% endif %}" target="_blank" class="flex flex-col items-center p-4 bg-spirit-light rounded-lg hover:bg-spirit-gold hover:text-spirit-dark transition-colors">
+                        <svg class="w-6 h-6 mb-2" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        <span class="text-sm">Telegram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

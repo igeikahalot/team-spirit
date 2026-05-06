@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ discipline.name }}{% endblock %}
+
+{% block content %}
+<!-- Header -->
+<section class="py-20 bg-spirit-darker">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center gap-6">
+            <div class="w-20 h-20 gradient-gold rounded-2xl flex items-center justify-center overflow-hidden">
+                {% if discipline.icon %}
+                <img src="{{ discipline.icon.url }}" alt="{{ discipline.name }}" class="w-full h-full object-contain p-3">
+                {% else %}
+                <span class="font-heading font-bold text-spirit-dark text-3xl">{{ discipline.name|slice:":2"|upper }}</span>
+                {% endif %}
+            </div>
+            <div>
+                <h1 class="font-heading text-4xl md:text-5xl font-bold text-gradient-gold">{{ discipline.name }}</h1>
+                <p class="text-gray-400 mt-2">{{ discipline.description }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Players -->
+<section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-heading text-2xl font-bold mb-8">Состав</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            {% for player in players %}
+            <a href="{% url 'core:player_detail' player.pk %}" class="card-hover group">
+                <div class="bg-spirit-gray rounded-xl overflow-hidden border border-spirit-light group-hover:border-spirit-gold/50">
+                    <div class="aspect-[3/4] bg-spirit-light flex items-center justify-center">
+                        {% if player.photo %}
+                        <img src="{{ player.photo.url }}" alt="{{ player.nickname }}" class="w-full h-full object-cover">
+                        {% else %}
+                        <span class="font-heading text-6xl text-spirit-gold/30">{{ player.nickname|slice:":1"|upper }}</span>
+                        {% endif %}
+                    </div>
+                    <div class="p-4 text-center">
+                        <div class="text-spirit-gold text-xs uppercase tracking-wider mb-1">{{ player.get_role_display }}</div>
+                        <h3 class="font-heading text-xl font-bold group-hover:text-spirit-gold transition-colors">{{ player.nickname }}</h3>
+                        <p class="text-gray-400 text-sm">{{ player.full_name }}</p>
+                    </div>
+                </div>
+            </a>
+            {% empty %}
+            <div class="col-span-5 text-center py-8 text-gray-500">
+                Состав формируется
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Achievements -->
+{% if achievements %}
+<section class="py-16 bg-spirit-darker">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-heading text-2xl font-bold mb-8">Достижения</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for achievement in achievements %}
+            <div class="bg-spirit-gray rounded-xl overflow-hidden border border-spirit-light">
+                {% if achievement.image %}
+                <div class="aspect-video bg-spirit-light">
+                    <img src="{{ achievement.image.url }}" alt="{{ achievement.title }}" class="w-full h-full object-cover">
+                </div>
+                {% endif %}
+                <div class="p-6">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 {% if achievement.place == 1 %}bg-yellow-500{% elif achievement.place == 2 %}bg-gray-400{% else %}bg-amber-700{% endif %} rounded-lg flex items-center justify-center">
+                            <span class="font-heading font-bold text-spirit-dark text-xl">{{ achievement.place }}</span>
+                        </div>
+                        <div>
+                            <div class="font-heading font-bold">{{ achievement.title }}</div>
+                            <div class="text-gray-500 text-sm">{{ achievement.date|date:"M Y" }}</div>
+                        </div>
+                    </div>
+                    <div class="text-spirit-gold font-medium">${{ achievement.prize_won|floatformat:0 }}</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- Matches -->
+{% if matches %}
+<section class="py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-heading text-2xl font-bold mb-8">Последние матчи</h2>
+        <div class="space-y-4">
+            {% for match in matches %}
+            <div class="bg-spirit-gray rounded-xl p-6 border border-spirit-light">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <div class="text-gray-400 text-sm mb-1">{{ match.tournament }}</div>
+                        <div class="font-heading font-bold">Team Spirit vs {{ match.opponent }}</div>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        {% if match.status == 'finished' %}
+                        <div class="font-heading text-2xl font-bold {% if match.result == 'win' %}text-green-500{% else %}text-red-500{% endif %}">
+                            {{ match.score_team }} : {{ match.score_opponent }}
+                        </div>
+                        {% else %}
+                        <div class="text-spirit-gold">{{ match.date|date:"d M, H:i" }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+{% endblock %}

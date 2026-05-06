@@ -1,0 +1,279 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Background -->
+    <div class="absolute inset-0 bg-gradient-to-b from-spirit-darker via-spirit-dark to-spirit-darker"></div>
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-spirit-gold rounded-full filter blur-3xl"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-spirit-gold rounded-full filter blur-3xl"></div>
+    </div>
+    
+    <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+        <div class="w-32 h-32 mx-auto mb-8 gradient-gold rounded-2xl flex items-center justify-center shadow-2xl">
+            <img src="{% static 'logo.svg' %}" alt="Team Spirit" class="w-28 h-28 object-contain">
+        </div>
+        <h1 class="font-heading text-5xl md:text-7xl lg:text-8xl font-bold tracking-wider mb-6">
+            <span class="text-gradient-gold">TEAM SPIRIT</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Чемпионы The International 2021
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="{% url 'core:team' %}" class="px-8 py-4 gradient-gold text-spirit-dark font-heading font-bold text-lg rounded-lg hover:opacity-90 transition-opacity">
+                НАША КОМАНДА
+            </a>
+            <a href="{% url 'core:matches' %}" class="px-8 py-4 border-2 border-spirit-gold text-spirit-gold font-heading font-bold text-lg rounded-lg hover:bg-spirit-gold hover:text-spirit-dark transition-colors">
+                РАСПИСАНИЕ МАТЧЕЙ
+            </a>
+        </div>
+    </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <svg class="w-6 h-6 text-spirit-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="py-16 bg-spirit-darker">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="text-center">
+                <div class="text-4xl md:text-5xl font-heading font-bold text-spirit-gold mb-2">
+                    ${{ stats.total_earnings|floatformat:0|default:"18M+" }}
+                </div>
+                <div class="text-gray-400 text-sm uppercase tracking-wider">Призовые</div>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl md:text-5xl font-heading font-bold text-spirit-gold mb-2">
+                    {{ stats.tournaments_won|default:"15+" }}
+                </div>
+                <div class="text-gray-400 text-sm uppercase tracking-wider">Турниров выиграно</div>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl md:text-5xl font-heading font-bold text-spirit-gold mb-2">
+                    {{ stats.players_count|default:"25+" }}
+                </div>
+                <div class="text-gray-400 text-sm uppercase tracking-wider">Игроков</div>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl md:text-5xl font-heading font-bold text-spirit-gold mb-2">
+                    2015
+                </div>
+                <div class="text-gray-400 text-sm uppercase tracking-wider">Год основания</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Disciplines Section -->
+<section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">НАШИ ДИСЦИПЛИНЫ</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">
+                Team Spirit представлен в ведущих киберспортивных дисциплинах
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for discipline in disciplines %}
+            <a href="{% url 'core:discipline_detail' discipline.slug %}" class="card-hover bg-spirit-gray rounded-xl p-6 border border-spirit-light hover:border-spirit-gold/50">
+                <div class="w-16 h-16 gradient-gold rounded-xl flex items-center justify-center mb-4 overflow-hidden">
+                    {% if discipline.icon %}
+                    <img src="{{ discipline.icon.url }}" alt="{{ discipline.name }}" class="w-full h-full object-contain p-2">
+                    {% else %}
+                    <span class="font-heading font-bold text-spirit-dark text-2xl">{{ discipline.name|slice:":2"|upper }}</span>
+                    {% endif %}
+                </div>
+                <h3 class="font-heading text-xl font-bold mb-2">{{ discipline.name }}</h3>
+                <p class="text-gray-400 text-sm">{{ discipline.description|truncatewords:20 }}</p>
+            </a>
+            {% empty %}
+            <div class="col-span-3 text-center py-12 text-gray-500">
+                Дисциплины скоро появятся
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Upcoming Matches -->
+<section class="py-20 bg-spirit-darker">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between mb-12">
+            <div>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-2">БЛИЖАЙШИЕ МАТЧИ</h2>
+                <p class="text-gray-400">Следите за расписанием игр</p>
+            </div>
+            <a href="{% url 'core:matches' %}" class="hidden md:flex items-center text-spirit-gold hover:underline">
+                Все матчи
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+            </a>
+        </div>
+        
+        <div class="space-y-4">
+            {% for match in upcoming_matches %}
+            <div class="bg-spirit-gray rounded-xl p-6 border border-spirit-light hover:border-spirit-gold/30 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 gradient-gold rounded-lg flex items-center justify-center">
+                            <span class="font-heading font-bold text-spirit-dark">TS</span>
+                        </div>
+                        <div>
+                            <div class="font-heading text-lg font-bold">Team Spirit vs {{ match.opponent }}</div>
+                            <div class="text-gray-400 text-sm">{{ match.tournament }}</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <div class="text-right">
+                            <div class="text-spirit-gold font-medium">{{ match.date|date:"d M Y" }}</div>
+                            <div class="text-gray-400 text-sm">{{ match.date|time:"H:i" }} MSK</div>
+                        </div>
+                        {% if match.stream_url %}
+                        <a href="{{ match.stream_url }}" target="_blank" class="px-4 py-2 bg-red-600 rounded-lg text-sm font-medium hover:bg-red-700 transition-colors">
+                            LIVE
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <div class="text-center py-12 text-gray-500 bg-spirit-gray rounded-xl">
+                Нет запланированных матчей
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Latest News -->
+<section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between mb-12">
+            <div>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-2">НОВОСТИ</h2>
+                <p class="text-gray-400">Последние события и обновления</p>
+            </div>
+            <a href="{% url 'core:news_list' %}" class="hidden md:flex items-center text-spirit-gold hover:underline">
+                Все новости
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+            </a>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for news in latest_news %}
+            <a href="{% url 'core:news_detail' news.slug %}" class="card-hover group">
+                <div class="bg-spirit-gray rounded-xl overflow-hidden border border-spirit-light group-hover:border-spirit-gold/50">
+                    <div class="aspect-video bg-spirit-light flex items-center justify-center">
+                        {% if news.image %}
+                        <img src="{{ news.image.url }}" alt="{{ news.title }}" class="w-full h-full object-cover">
+                        {% else %}
+                        <span class="font-heading text-4xl text-spirit-gold/30">TS</span>
+                        {% endif %}
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 bg-spirit-gold/20 text-spirit-gold text-xs rounded">{{ news.get_category_display }}</span>
+                            <span class="text-gray-500 text-xs">{{ news.created_at|date:"d M Y" }}</span>
+                        </div>
+                        <h3 class="font-heading text-lg font-bold mb-2 group-hover:text-spirit-gold transition-colors">{{ news.title }}</h3>
+                        <p class="text-gray-400 text-sm line-clamp-2">{{ news.excerpt }}</p>
+                    </div>
+                </div>
+            </a>
+            {% empty %}
+            <div class="col-span-3 text-center py-12 text-gray-500 bg-spirit-gray rounded-xl">
+                Новости скоро появятся
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Recent Achievements -->
+<section class="py-20 bg-spirit-darker">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between mb-12">
+            <div>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-2">ДОСТИЖЕНИЯ</h2>
+                <p class="text-gray-400">Наши победы и успехи</p>
+            </div>
+            <a href="{% url 'core:achievements' %}" class="hidden md:flex items-center text-spirit-gold hover:underline">
+                Все достижения
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+            </a>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for achievement in achievements %}
+            <div class="card-hover bg-spirit-gray rounded-xl overflow-hidden border border-spirit-light hover:border-spirit-gold/50">
+                {% if achievement.image %}
+                <div class="aspect-video bg-spirit-light">
+                    <img src="{{ achievement.image.url }}" alt="{{ achievement.title }}" class="w-full h-full object-cover">
+                </div>
+                {% endif %}
+                <div class="p-6">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 {% if achievement.place == 1 %}bg-yellow-500{% elif achievement.place == 2 %}bg-gray-400{% else %}bg-amber-700{% endif %} rounded-lg flex items-center justify-center">
+                            <span class="font-heading font-bold text-spirit-dark text-xl">{{ achievement.place }}</span>
+                        </div>
+                        <span class="text-spirit-gold font-medium">${{ achievement.prize_won|floatformat:0 }}</span>
+                    </div>
+                    <h3 class="font-heading text-lg font-bold mb-2">{{ achievement.title }}</h3>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-400">{{ achievement.discipline.name }}</span>
+                        <span class="text-gray-500">{{ achievement.date|date:"M Y" }}</span>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <div class="col-span-3 text-center py-12 text-gray-500 bg-spirit-gray rounded-xl">
+                Достижения скоро появятся
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Partners -->
+{% if partners %}
+<section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">НАШИ ПАРТНЁРЫ</h2>
+            <p class="text-gray-400">Благодарим за поддержку</p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {% for partner in partners %}
+            <a href="{{ partner.website }}" target="_blank" class="bg-spirit-gray rounded-xl p-6 flex items-center justify-center hover:bg-spirit-light transition-colors">
+                {% if partner.logo %}
+                <img src="{{ partner.logo.url }}" alt="{{ partner.name }}" class="max-h-12 w-auto opacity-70 hover:opacity-100 transition-opacity">
+                {% else %}
+                <span class="text-gray-500 font-medium">{{ partner.name }}</span>
+                {% endif %}
+            </a>
+            {% endfor %}
+        </div>
+        
+        <div class="text-center mt-8">
+            <a href="{% url 'core:partners' %}" class="text-spirit-gold hover:underline">Все партнёры →</a>
+        </div>
+    </div>
+</section>
+{% endif %}
+{% endblock %}

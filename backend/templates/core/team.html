@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block title %}Команда{% endblock %}
+
+{% block content %}
+<!-- Header -->
+<section class="py-20 bg-spirit-darker">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="font-heading text-4xl md:text-5xl font-bold mb-4">
+            <span class="text-gradient-gold">НАША КОМАНДА</span>
+        </h1>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+            Познакомьтесь с игроками и персоналом Team Spirit
+        </p>
+    </div>
+</section>
+
+<!-- Team Rosters by Discipline -->
+{% for discipline in disciplines %}
+<section class="py-16 {% if forloop.counter|divisibleby:2 %}bg-spirit-darker{% endif %}">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center gap-4 mb-10">
+            <div class="w-14 h-14 gradient-gold rounded-xl flex items-center justify-center overflow-hidden">
+                {% if discipline.icon %}
+                <img src="{{ discipline.icon.url }}" alt="{{ discipline.name }}" class="w-full h-full object-contain p-2">
+                {% else %}
+                <span class="font-heading font-bold text-spirit-dark text-xl">{{ discipline.name|slice:":2"|upper }}</span>
+                {% endif %}
+            </div>
+            <div>
+                <h2 class="font-heading text-2xl md:text-3xl font-bold">{{ discipline.name }}</h2>
+                <p class="text-gray-400 text-sm">{{ discipline.players.count }} игроков</p>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            {% for player in discipline.players.all %}
+            {% if player.is_active %}
+            <a href="{% url 'core:player_detail' player.pk %}" class="card-hover group">
+                <div class="bg-spirit-gray rounded-xl overflow-hidden border border-spirit-light group-hover:border-spirit-gold/50">
+                    <div class="aspect-[3/4] bg-spirit-light flex items-center justify-center">
+                        {% if player.photo %}
+                        <img src="{{ player.photo.url }}" alt="{{ player.nickname }}" class="w-full h-full object-cover">
+                        {% else %}
+                        <span class="font-heading text-6xl text-spirit-gold/30">{{ player.nickname|slice:":1"|upper }}</span>
+                        {% endif %}
+                    </div>
+                    <div class="p-4 text-center">
+                        <div class="text-spirit-gold text-xs uppercase tracking-wider mb-1">{% if player.role %}{{ player.role.name }}{% else %}Игрок{% endif %}</div>
+                        <h3 class="font-heading text-xl font-bold group-hover:text-spirit-gold transition-colors">{{ player.nickname }}</h3>
+                        <p class="text-gray-400 text-sm">{{ player.full_name }}</p>
+                        <div class="flex items-center justify-center gap-1 mt-2 text-gray-500 text-xs">
+                            <span>{{ player.country }}</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            {% endif %}
+            {% empty %}
+            <div class="col-span-5 text-center py-8 text-gray-500">
+                Состав формируется
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% empty %}
+<section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-gray-500 text-lg">Информация о составах скоро появится</p>
+    </div>
+</section>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block title %}Новости{% endblock %}
+
+{% block content %}
+<!-- Header -->
+<section class="py-20 bg-spirit-darker">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="font-heading text-4xl md:text-5xl font-bold mb-4">
+            <span class="text-gradient-gold">НОВОСТИ</span>
+        </h1>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+            Последние события и обновления Team Spirit
+        </p>
+    </div>
+</section>
+
+<!-- Filters -->
+<section class="py-8 border-b border-spirit-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap gap-4">
+            <a href="{% url 'core:news_list' %}" class="px-4 py-2 rounded-lg text-sm font-medium {% if not request.GET.category %}bg-spirit-gold text-spirit-dark{% else %}bg-spirit-gray text-gray-300 hover:bg-spirit-light{% endif %}">
+                Все
+            </a>
+            {% for key, label in categories %}
+            <a href="?category={{ key }}" class="px-4 py-2 rounded-lg text-sm font-medium {% if request.GET.category == key %}bg-spirit-gold text-spirit-dark{% else %}bg-spirit-gray text-gray-300 hover:bg-spirit-light{% endif %}">
+                {{ label }}
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- News Grid -->
+<section class="py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for news in news_list %}
+            <a href="{% url 'core:news_detail' news.slug %}" class="card-hover group">
+                <div class="bg-spirit-gray rounded-xl overflow-hidden border border-spirit-light group-hover:border-spirit-gold/50">
+                    <div class="aspect-video bg-spirit-light flex items-center justify-center">
+                        {% if news.image %}
+                        <img src="{{ news.image.url }}" alt="{{ news.title }}" class="w-full h-full object-cover">
+                        {% else %}
+                        <span class="font-heading text-4xl text-spirit-gold/30">TS</span>
+                        {% endif %}
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 bg-spirit-gold/20 text-spirit-gold text-xs rounded">{{ news.get_category_display }}</span>
+                            {% if news.discipline %}
+                            <span class="px-2 py-1 bg-spirit-light text-gray-400 text-xs rounded">{{ news.discipline.name }}</span>
+                            {% endif %}
+                        </div>
+                        <h3 class="font-heading text-lg font-bold mb-2 group-hover:text-spirit-gold transition-colors">{{ news.title }}</h3>
+                        <p class="text-gray-400 text-sm line-clamp-2 mb-4">{{ news.excerpt }}</p>
+                        <div class="flex items-center justify-between text-xs text-gray-500">
+                            <span>{{ news.created_at|date:"d M Y" }}</span>
+                            <span>{{ news.views }} просмотров</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            {% empty %}
+            <div class="col-span-3 text-center py-12 text-gray-500">
+                Новости не найдены
+            </div>
+            {% endfor %}
+        </div>
+        
+        <!-- Pagination -->
+        {% if page_obj.has_other_pages %}
+        <div class="flex justify-center mt-12 gap-2">
+            {% if page_obj.has_previous %}
+            <a href="?page={{ page_obj.previous_page_number }}" class="px-4 py-2 bg-spirit-gray rounded-lg hover:bg-spirit-light">Назад</a>
+            {% endif %}
+            
+            <span class="px-4 py-2 text-gray-400">
+                Страница {{ page_obj.number }} из {{ page_obj.paginator.num_pages }}
+            </span>
+            
+            {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}" class="px-4 py-2 bg-spirit-gray rounded-lg hover:bg-spirit-light">Далее</a>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}
