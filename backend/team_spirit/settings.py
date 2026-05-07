@@ -19,6 +19,9 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary_storage',
+    'django.contrib.staticfiles',
+    'cloudinary',
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
@@ -93,3 +96,11 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ]
 }
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dtswouvsm',
+    'API_KEY': '732922992783139',
+    'API_SECRET': 'qo9LHP4BkfAJiLHBuHermRI--gg',
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
