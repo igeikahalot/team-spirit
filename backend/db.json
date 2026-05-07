@@ -1,566 +1,6 @@
 [
   {
-    "model": "admin.logentry",
-    "pk": 1,
-    "fields": {
-      "action_time": "2026-04-24T14:13:14.815Z",
-      "user": 1,
-      "content_type": 7,
-      "object_id": "2",
-      "object_repr": "Counter-Strike 2",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043a\\u043e\\u043d\\u043a\\u0430\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 2,
-    "fields": {
-      "action_time": "2026-04-24T14:28:14.300Z",
-      "user": 1,
-      "content_type": 7,
-      "object_id": "2",
-      "object_repr": "Counter-Strike 2",
-      "action_flag": 2,
-      "change_message": "[]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 3,
-    "fields": {
-      "action_time": "2026-04-24T14:28:32.872Z",
-      "user": 1,
-      "content_type": 7,
-      "object_id": "2",
-      "object_repr": "Counter-Strike 2",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043a\\u043e\\u043d\\u043a\\u0430\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 4,
-    "fields": {
-      "action_time": "2026-04-24T14:37:37.896Z",
-      "user": 1,
-      "content_type": 7,
-      "object_id": "2",
-      "object_repr": "Counter-Strike 2",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043a\\u043e\\u043d\\u043a\\u0430\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 5,
-    "fields": {
-      "action_time": "2026-04-24T14:38:20.269Z",
-      "user": 1,
-      "content_type": 7,
-      "object_id": "1",
-      "object_repr": "Dota 2",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043a\\u043e\\u043d\\u043a\\u0430\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 6,
-    "fields": {
-      "action_time": "2026-04-24T14:39:04.434Z",
-      "user": 1,
-      "content_type": 7,
-      "object_id": "3",
-      "object_repr": "PUBG Mobile",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043a\\u043e\\u043d\\u043a\\u0430\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 7,
-    "fields": {
-      "action_time": "2026-04-24T14:41:53.477Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "2",
-      "object_repr": "The International 2023 - 2 место",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 1,
-    "fields": {
-      "name": "Can add log entry",
-      "content_type": 1,
-      "codename": "add_logentry"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 2,
-    "fields": {
-      "name": "Can change log entry",
-      "content_type": 1,
-      "codename": "change_logentry"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 3,
-    "fields": {
-      "name": "Can delete log entry",
-      "content_type": 1,
-      "codename": "delete_logentry"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 4,
-    "fields": {
-      "name": "Can view log entry",
-      "content_type": 1,
-      "codename": "view_logentry"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 5,
-    "fields": {
-      "name": "Can add permission",
-      "content_type": 2,
-      "codename": "add_permission"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 6,
-    "fields": {
-      "name": "Can change permission",
-      "content_type": 2,
-      "codename": "change_permission"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 7,
-    "fields": {
-      "name": "Can delete permission",
-      "content_type": 2,
-      "codename": "delete_permission"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 8,
-    "fields": {
-      "name": "Can view permission",
-      "content_type": 2,
-      "codename": "view_permission"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 9,
-    "fields": {
-      "name": "Can add group",
-      "content_type": 3,
-      "codename": "add_group"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 10,
-    "fields": {
-      "name": "Can change group",
-      "content_type": 3,
-      "codename": "change_group"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 11,
-    "fields": {
-      "name": "Can delete group",
-      "content_type": 3,
-      "codename": "delete_group"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 12,
-    "fields": {
-      "name": "Can view group",
-      "content_type": 3,
-      "codename": "view_group"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 13,
-    "fields": {
-      "name": "Can add user",
-      "content_type": 4,
-      "codename": "add_user"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 14,
-    "fields": {
-      "name": "Can change user",
-      "content_type": 4,
-      "codename": "change_user"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 15,
-    "fields": {
-      "name": "Can delete user",
-      "content_type": 4,
-      "codename": "delete_user"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 16,
-    "fields": {
-      "name": "Can view user",
-      "content_type": 4,
-      "codename": "view_user"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 17,
-    "fields": {
-      "name": "Can add content type",
-      "content_type": 5,
-      "codename": "add_contenttype"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 18,
-    "fields": {
-      "name": "Can change content type",
-      "content_type": 5,
-      "codename": "change_contenttype"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 19,
-    "fields": {
-      "name": "Can delete content type",
-      "content_type": 5,
-      "codename": "delete_contenttype"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 20,
-    "fields": {
-      "name": "Can view content type",
-      "content_type": 5,
-      "codename": "view_contenttype"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 21,
-    "fields": {
-      "name": "Can add session",
-      "content_type": 6,
-      "codename": "add_session"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 22,
-    "fields": {
-      "name": "Can change session",
-      "content_type": 6,
-      "codename": "change_session"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 23,
-    "fields": {
-      "name": "Can delete session",
-      "content_type": 6,
-      "codename": "delete_session"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 24,
-    "fields": {
-      "name": "Can view session",
-      "content_type": 6,
-      "codename": "view_session"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 25,
-    "fields": {
-      "name": "Can add Дисциплина",
-      "content_type": 7,
-      "codename": "add_discipline"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 26,
-    "fields": {
-      "name": "Can change Дисциплина",
-      "content_type": 7,
-      "codename": "change_discipline"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 27,
-    "fields": {
-      "name": "Can delete Дисциплина",
-      "content_type": 7,
-      "codename": "delete_discipline"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 28,
-    "fields": {
-      "name": "Can view Дисциплина",
-      "content_type": 7,
-      "codename": "view_discipline"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 29,
-    "fields": {
-      "name": "Can add Партнёр",
-      "content_type": 8,
-      "codename": "add_partner"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 30,
-    "fields": {
-      "name": "Can change Партнёр",
-      "content_type": 8,
-      "codename": "change_partner"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 31,
-    "fields": {
-      "name": "Can delete Партнёр",
-      "content_type": 8,
-      "codename": "delete_partner"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 32,
-    "fields": {
-      "name": "Can view Партнёр",
-      "content_type": 8,
-      "codename": "view_partner"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 33,
-    "fields": {
-      "name": "Can add Информация о команде",
-      "content_type": 9,
-      "codename": "add_teaminfo"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 34,
-    "fields": {
-      "name": "Can change Информация о команде",
-      "content_type": 9,
-      "codename": "change_teaminfo"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 35,
-    "fields": {
-      "name": "Can delete Информация о команде",
-      "content_type": 9,
-      "codename": "delete_teaminfo"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 36,
-    "fields": {
-      "name": "Can view Информация о команде",
-      "content_type": 9,
-      "codename": "view_teaminfo"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 37,
-    "fields": {
-      "name": "Can add Достижение",
-      "content_type": 10,
-      "codename": "add_achievement"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 38,
-    "fields": {
-      "name": "Can change Достижение",
-      "content_type": 10,
-      "codename": "change_achievement"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 39,
-    "fields": {
-      "name": "Can delete Достижение",
-      "content_type": 10,
-      "codename": "delete_achievement"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 40,
-    "fields": {
-      "name": "Can view Достижение",
-      "content_type": 10,
-      "codename": "view_achievement"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 41,
-    "fields": {
-      "name": "Can add Матч",
-      "content_type": 11,
-      "codename": "add_match"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 42,
-    "fields": {
-      "name": "Can change Матч",
-      "content_type": 11,
-      "codename": "change_match"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 43,
-    "fields": {
-      "name": "Can delete Матч",
-      "content_type": 11,
-      "codename": "delete_match"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 44,
-    "fields": {
-      "name": "Can view Матч",
-      "content_type": 11,
-      "codename": "view_match"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 45,
-    "fields": {
-      "name": "Can add Новость",
-      "content_type": 12,
-      "codename": "add_news"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 46,
-    "fields": {
-      "name": "Can change Новость",
-      "content_type": 12,
-      "codename": "change_news"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 47,
-    "fields": {
-      "name": "Can delete Новость",
-      "content_type": 12,
-      "codename": "delete_news"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 48,
-    "fields": {
-      "name": "Can view Новость",
-      "content_type": 12,
-      "codename": "view_news"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 49,
-    "fields": {
-      "name": "Can add Игрок",
-      "content_type": 13,
-      "codename": "add_player"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 50,
-    "fields": {
-      "name": "Can change Игрок",
-      "content_type": 13,
-      "codename": "change_player"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 51,
-    "fields": {
-      "name": "Can delete Игрок",
-      "content_type": 13,
-      "codename": "delete_player"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 52,
-    "fields": {
-      "name": "Can view Игрок",
-      "content_type": 13,
-      "codename": "view_player"
-    }
-  },
-  {
     "model": "auth.user",
-    "pk": 1,
     "fields": {
       "password": "pbkdf2_sha256$720000$kFU2WwoWOnfuvL561Ywnnt$YLhgA4FsF6X62T7Qwbr1qmoYiLOGo8vLby99IWOSvOs=",
       "last_login": "2026-04-24T14:11:12.455Z",
@@ -575,71 +15,6 @@
       "groups": [],
       "user_permissions": []
     }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 1,
-    "fields": { "app_label": "admin", "model": "logentry" }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 2,
-    "fields": { "app_label": "auth", "model": "permission" }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 3,
-    "fields": { "app_label": "auth", "model": "group" }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 4,
-    "fields": { "app_label": "auth", "model": "user" }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 5,
-    "fields": { "app_label": "contenttypes", "model": "contenttype" }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 6,
-    "fields": { "app_label": "sessions", "model": "session" }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 7,
-    "fields": { "app_label": "core", "model": "discipline" }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 8,
-    "fields": { "app_label": "core", "model": "partner" }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 9,
-    "fields": { "app_label": "core", "model": "teaminfo" }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 10,
-    "fields": { "app_label": "core", "model": "achievement" }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 11,
-    "fields": { "app_label": "core", "model": "match" }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 12,
-    "fields": { "app_label": "core", "model": "news" }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 13,
-    "fields": { "app_label": "core", "model": "player" }
   },
   {
     "model": "sessions.session",
@@ -681,14 +56,242 @@
   },
   {
     "model": "core.discipline",
-    "pk": 3,
+    "pk": 4,
     "fields": {
-      "name": "PUBG Mobile",
-      "slug": "pubgm",
-      "icon": "disciplines/pubg.png",
-      "description": "Мобильный киберспорт — PUBG Mobile",
+      "name": "CS Academy",
+      "slug": "cs-academy",
+      "icon": "disciplines/cs-academy.png",
+      "description": "",
       "is_active": true
     }
+  },
+  {
+    "model": "core.discipline",
+    "pk": 5,
+    "fields": {
+      "name": "Mobile Legend:BB",
+      "slug": "mobile-legendbb",
+      "icon": "disciplines/league-of-legends.png",
+      "description": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.discipline",
+    "pk": 6,
+    "fields": {
+      "name": "Chess",
+      "slug": "chess",
+      "icon": "disciplines/chess-svgrepo-com.png",
+      "description": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.discipline",
+    "pk": 7,
+    "fields": {
+      "name": "Team Spirit Family",
+      "slug": "team-spirit-family",
+      "icon": "disciplines/tsfam.png",
+      "description": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.role",
+    "pk": 1,
+    "fields": {
+      "name": "Carry",
+      "slug": "carry",
+      "description": "",
+      "order": 0
+    }
+  },
+  {
+    "model": "core.role",
+    "pk": 2,
+    "fields": { "name": "Mid", "slug": "mid", "description": "", "order": 0 }
+  },
+  {
+    "model": "core.role",
+    "pk": 3,
+    "fields": {
+      "name": "Offlane",
+      "slug": "offlane",
+      "description": "",
+      "order": 0
+    }
+  },
+  {
+    "model": "core.role",
+    "pk": 4,
+    "fields": {
+      "name": "Support",
+      "slug": "support",
+      "description": "",
+      "order": 0
+    }
+  },
+  {
+    "model": "core.role",
+    "pk": 5,
+    "fields": {
+      "name": "Главный тренер",
+      "slug": "glavnyj-trener",
+      "description": "",
+      "order": 0
+    }
+  },
+  {
+    "model": "core.role",
+    "pk": 6,
+    "fields": {
+      "name": "Менеджер",
+      "slug": "menedzher",
+      "description": "",
+      "order": 0
+    }
+  },
+  {
+    "model": "core.role",
+    "pk": 7,
+    "fields": {
+      "name": "Аналитик",
+      "slug": "analitik",
+      "description": "",
+      "order": 0
+    }
+  },
+  {
+    "model": "core.role",
+    "pk": 8,
+    "fields": {
+      "name": "Benched",
+      "slug": "benched",
+      "description": "",
+      "order": 0
+    }
+  },
+  {
+    "model": "core.role",
+    "pk": 9,
+    "fields": {
+      "name": "Rifler",
+      "slug": "rifler",
+      "description": "",
+      "order": 0
+    }
+  },
+  {
+    "model": "core.role",
+    "pk": 10,
+    "fields": { "name": "IGL", "slug": "igl", "description": "", "order": 0 }
+  },
+  {
+    "model": "core.role",
+    "pk": 11,
+    "fields": {
+      "name": "AWPer",
+      "slug": "awper",
+      "description": "",
+      "order": 0
+    }
+  },
+  {
+    "model": "core.role",
+    "pk": 12,
+    "fields": {
+      "name": "Тренер",
+      "slug": "trener",
+      "description": "",
+      "order": 0
+    }
+  },
+  {
+    "model": "core.role",
+    "pk": 13,
+    "fields": {
+      "name": "Игрок/Тренер",
+      "slug": "igroktrener",
+      "description": "",
+      "order": 0
+    }
+  },
+  {
+    "model": "core.role",
+    "pk": 14,
+    "fields": {
+      "name": "Roamer",
+      "slug": "roamer",
+      "description": "",
+      "order": 0
+    }
+  },
+  {
+    "model": "core.role",
+    "pk": 15,
+    "fields": {
+      "name": "Gold Lane",
+      "slug": "gold-lane",
+      "description": "",
+      "order": 0
+    }
+  },
+  {
+    "model": "core.role",
+    "pk": 16,
+    "fields": {
+      "name": "Middle",
+      "slug": "middle",
+      "description": "",
+      "order": 0
+    }
+  },
+  {
+    "model": "core.role",
+    "pk": 17,
+    "fields": {
+      "name": "EXP Lane",
+      "slug": "exp-lane",
+      "description": "",
+      "order": 0
+    }
+  },
+  {
+    "model": "core.role",
+    "pk": 18,
+    "fields": {
+      "name": "Гроссмейтер",
+      "slug": "grossmejter",
+      "description": "",
+      "order": 0
+    }
+  },
+  {
+    "model": "core.role",
+    "pk": 19,
+    "fields": {
+      "name": "Пукич",
+      "slug": "pukich",
+      "description": "",
+      "order": 0
+    }
+  },
+  {
+    "model": "core.role",
+    "pk": 20,
+    "fields": {
+      "name": "Стример",
+      "slug": "strimer",
+      "description": "",
+      "order": 0
+    }
+  },
+  {
+    "model": "core.role",
+    "pk": 21,
+    "fields": { "name": "Хост", "slug": "host", "description": "", "order": 0 }
   },
   {
     "model": "core.player",
@@ -698,15 +301,12 @@
       "first_name": "Илья",
       "last_name": "Мулярчук",
       "discipline": 1,
-      "role": "carry",
-      "photo": "",
+      "role": 1,
+      "photo": "players/yatoro.webp",
       "country": "Украина",
-      "birth_date": null,
-      "join_date": "2021-01-01",
-      "bio": "",
-      "twitch": "",
-      "twitter": "",
-      "instagram": "",
+      "birth_date": "2003-03-12",
+      "join_date": "2020-12-22",
+      "bio": "Родной город - Буча;\r\nЛюбимые герои:\r\n● Terrorblade\r\n● Anti-Mage\r\n● Morphling",
       "is_active": true
     }
   },
@@ -714,19 +314,16 @@
     "model": "core.player",
     "pk": 2,
     "fields": {
-      "nickname": "Larl",
+      "nickname": "Lari",
       "first_name": "Денис",
       "last_name": "Сигитов",
       "discipline": 1,
-      "role": "mid",
-      "photo": "",
+      "role": 2,
+      "photo": "players/larl.webp",
       "country": "Россия",
-      "birth_date": null,
-      "join_date": "2021-01-01",
-      "bio": "",
-      "twitch": "",
-      "twitter": "",
-      "instagram": "",
+      "birth_date": "2002-01-22",
+      "join_date": "2022-12-22",
+      "bio": "Родной город - Москва;\r\nЛюбимые герои:\r\n● Void Spirit\r\n● Puck\r\n● Storm Spirit",
       "is_active": true
     }
   },
@@ -738,35 +335,12 @@
       "first_name": "Магомед",
       "last_name": "Халилов",
       "discipline": 1,
-      "role": "offlane",
-      "photo": "",
+      "role": 3,
+      "photo": "players/colapse.webp",
       "country": "Россия",
-      "birth_date": null,
-      "join_date": "2021-01-01",
-      "bio": "",
-      "twitch": "",
-      "twitter": "",
-      "instagram": "",
-      "is_active": true
-    }
-  },
-  {
-    "model": "core.player",
-    "pk": 4,
-    "fields": {
-      "nickname": "Mira",
-      "first_name": "Мирослав",
-      "last_name": "Колпаков",
-      "discipline": 1,
-      "role": "support",
-      "photo": "",
-      "country": "Россия",
-      "birth_date": null,
-      "join_date": "2021-01-01",
-      "bio": "",
-      "twitch": "",
-      "twitter": "",
-      "instagram": "",
+      "birth_date": "2002-02-25",
+      "join_date": "2020-12-22",
+      "bio": "Родной город - Махачкала;\r\nЛюбимые герои:\r\n● Mars\r\n● Magnus\r\n● Void Spirit",
       "is_active": true
     }
   },
@@ -778,16 +352,1007 @@
       "first_name": "Ярослав",
       "last_name": "Найдёнов",
       "discipline": 1,
-      "role": "captain",
-      "photo": "",
+      "role": 8,
+      "photo": "players/miposhka.webp",
+      "country": "Россия",
+      "birth_date": "1997-11-30",
+      "join_date": "2020-12-22",
+      "bio": "Родной город - Златоуст;\r\n\r\nЛюбимые герои:\r\n● Ancient Apparition\r\n● Rubick\r\n● Lion",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 6,
+    "fields": {
+      "nickname": "Rue",
+      "first_name": "Александр",
+      "last_name": "Филин",
+      "discipline": 1,
+      "role": 4,
+      "photo": "players/rue.webp",
       "country": "Россия",
       "birth_date": null,
       "join_date": "2021-01-01",
       "bio": "",
-      "twitch": "",
-      "twitter": "",
-      "instagram": "",
       "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 7,
+    "fields": {
+      "nickname": "Panto",
+      "first_name": "Никита",
+      "last_name": "Балаганин",
+      "discipline": 1,
+      "role": 4,
+      "photo": "players/panto.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2021-01-01",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 8,
+    "fields": {
+      "nickname": "Silent",
+      "first_name": "Айрат",
+      "last_name": "Газиев",
+      "discipline": 1,
+      "role": 5,
+      "photo": "players/silent.webp",
+      "country": "Россия",
+      "birth_date": "1992-12-03",
+      "join_date": "2020-12-22",
+      "bio": "Родной город - Казань",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 9,
+    "fields": {
+      "nickname": "Korb3n",
+      "first_name": "Дмитрий",
+      "last_name": "Белов",
+      "discipline": 1,
+      "role": 6,
+      "photo": "players/korb3n.webp",
+      "country": "Россия",
+      "birth_date": "2000-05-19",
+      "join_date": "2020-12-22",
+      "bio": "Родной город - Ленинград;\r\n\r\nОсновал Yellow Submarine и собрал состав, который впоследствии стал Team Spirit;\r\n\r\nЗона ответственности: результаты команды, организация тренировочного процесса, оптимизация коммуникации внутри коллектива, скаутинг",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 10,
+    "fields": {
+      "nickname": "Dklana",
+      "first_name": "Руслана",
+      "last_name": "Берест",
+      "discipline": 1,
+      "role": 6,
+      "photo": "players/dklana.webp",
+      "country": "Россия",
+      "birth_date": "2000-07-11",
+      "join_date": "2016-01-01",
+      "bio": "Родной город - Киев;\r\n\r\nОбязанности: коммуникация с ТО и студиями, документооборот, организация буткемпов и поездок на оффлайн-турниры, etc.",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 11,
+    "fields": {
+      "nickname": "Sikle",
+      "first_name": "Марк",
+      "last_name": "Лерман",
+      "discipline": 1,
+      "role": 7,
+      "photo": "players/sikle.webp",
+      "country": "Россия",
+      "birth_date": "1994-05-06",
+      "join_date": "2022-08-22",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 12,
+    "fields": {
+      "nickname": "Satanic",
+      "first_name": "Алан",
+      "last_name": "Галлямов",
+      "discipline": 1,
+      "role": 8,
+      "photo": "players/satanic.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2021-01-01",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 13,
+    "fields": {
+      "nickname": "Donk",
+      "first_name": "Даниил",
+      "last_name": "Крышковец",
+      "discipline": 2,
+      "role": 9,
+      "photo": "players/donk.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2026-05-04",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 14,
+    "fields": {
+      "nickname": "Magixxx",
+      "first_name": "Борис",
+      "last_name": "Воробьев",
+      "discipline": 2,
+      "role": 10,
+      "photo": "players/magixx.webp",
+      "country": "Россия",
+      "birth_date": "2003-06-03",
+      "join_date": "2019-09-22",
+      "bio": "Любимое оружие - USP-S;\r\nЛюбимая карта - Nuke",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 15,
+    "fields": {
+      "nickname": "Sh1ro",
+      "first_name": "Дмитрий",
+      "last_name": "Соколов",
+      "discipline": 2,
+      "role": 11,
+      "photo": "players/sh1ro.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2021-01-21",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 16,
+    "fields": {
+      "nickname": "Zont1x",
+      "first_name": "Мирослав",
+      "last_name": "Плахотя",
+      "discipline": 2,
+      "role": 9,
+      "photo": "players/zontix.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2026-05-04",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 17,
+    "fields": {
+      "nickname": "Tn1r",
+      "first_name": "Андрей",
+      "last_name": "Татаринович",
+      "discipline": 2,
+      "role": 9,
+      "photo": "players/tn1r.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2021-01-21",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 18,
+    "fields": {
+      "nickname": "Hally",
+      "first_name": "Сергей",
+      "last_name": "Шаваев",
+      "discipline": 2,
+      "role": 12,
+      "photo": "players/hally.webp",
+      "country": "Россия",
+      "birth_date": "1993-07-06",
+      "join_date": "2022-02-22",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 19,
+    "fields": {
+      "nickname": "Chopper",
+      "first_name": "Леонид",
+      "last_name": "Вишняков",
+      "discipline": 2,
+      "role": 8,
+      "photo": "players/chopper.webp",
+      "country": "Россия",
+      "birth_date": "1997-02-04",
+      "join_date": "2019-03-22",
+      "bio": "Родной город - Курган;\r\nЛюбимое оружие - АК-47\r\nЛюбимая карта - Dust II",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 20,
+    "fields": {
+      "nickname": "Lo9d",
+      "first_name": "Владислав",
+      "last_name": "Дроздов",
+      "discipline": 2,
+      "role": 6,
+      "photo": "players/lo9d.webp",
+      "country": "Россия",
+      "birth_date": "2000-12-14",
+      "join_date": "2022-03-22",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 21,
+    "fields": {
+      "nickname": "S0tf1k",
+      "first_name": "Дмитрий",
+      "last_name": "Форостянко",
+      "discipline": 4,
+      "role": 13,
+      "photo": "players/s0tf1k.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2021-01-21",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 22,
+    "fields": {
+      "nickname": "Kiryasoo",
+      "first_name": "Кирилл",
+      "last_name": "Соколов",
+      "discipline": 4,
+      "role": 11,
+      "photo": "players/kiryasoo.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2021-01-21",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 23,
+    "fields": {
+      "nickname": "Soul3",
+      "first_name": "Дмитрий",
+      "last_name": "Бухтеев",
+      "discipline": 4,
+      "role": 6,
+      "photo": "players/frame.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2021-01-21",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 24,
+    "fields": {
+      "nickname": "Sawo",
+      "first_name": "Станислав",
+      "last_name": "Решняк",
+      "discipline": 5,
+      "role": 14,
+      "photo": "players/sawo.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2021-01-21",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 25,
+    "fields": {
+      "nickname": "Hiko",
+      "first_name": "Антон",
+      "last_name": "Пак",
+      "discipline": 5,
+      "role": 15,
+      "photo": "players/hiko.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2021-01-21",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 26,
+    "fields": {
+      "nickname": "Sunset Lover",
+      "first_name": "Кемиран",
+      "last_name": "Кочкаров",
+      "discipline": 5,
+      "role": 16,
+      "photo": "players/sunsetlover.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2021-01-21",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 27,
+    "fields": {
+      "nickname": "Kid Bomba",
+      "first_name": "Матеос",
+      "last_name": "Хатзилакос",
+      "discipline": 5,
+      "role": 17,
+      "photo": "players/kidbomba.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2026-05-05",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 28,
+    "fields": {
+      "nickname": "Euphoria",
+      "first_name": "Екатерина",
+      "last_name": "Устинова",
+      "discipline": 5,
+      "role": 6,
+      "photo": "players/euphoria.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2021-01-21",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 29,
+    "fields": {
+      "nickname": "Duhless",
+      "first_name": "Даниил",
+      "last_name": "Дубов",
+      "discipline": 6,
+      "role": 18,
+      "photo": "players/dubov.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2021-01-21",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 30,
+    "fields": {
+      "nickname": "Konevlad",
+      "first_name": "Владислав",
+      "last_name": "Артемьев",
+      "discipline": 6,
+      "role": 18,
+      "photo": "players/artemiev.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2021-01-21",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 31,
+    "fields": {
+      "nickname": "Silvername",
+      "first_name": "Владислав",
+      "last_name": "Синотов",
+      "discipline": 7,
+      "role": 19,
+      "photo": "players/silvername.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2017-01-22",
+      "bio": "Родной город - Тверь;\r\nИграет в HS с - 2015 года;\r\nЛюбимый формат - Поля сражений;\r\nЛюбимый старый архетип - Патрон воин;\r\nЛюбимый архетип - Контроль воин;",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 32,
+    "fields": {
+      "nickname": "Wycc",
+      "first_name": "Максим",
+      "last_name": "Козлов",
+      "discipline": 7,
+      "role": 20,
+      "photo": "players/kozlov.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2017-12-22",
+      "bio": "Родной город - Севастополь;\r\n\r\nЭкс-капитан и тренер Team Spirit PUBG;\r\nЛюбимые игры: PUBG, Arma 2, Battlefield 3;\r\nХобби: футбол, рестлинг, комиксы;",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 33,
+    "fields": {
+      "nickname": "Illidan",
+      "first_name": "Илья",
+      "last_name": "Пивцаев",
+      "discipline": 7,
+      "role": 20,
+      "photo": "players/pivcaev.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2021-01-21",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 34,
+    "fields": {
+      "nickname": "Scl'koma",
+      "first_name": "Камиль",
+      "last_name": "Биктимиров",
+      "discipline": 7,
+      "role": null,
+      "photo": "players/bictirov.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2021-01-21",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 35,
+    "fields": {
+      "nickname": "Art1st",
+      "first_name": "Вячеслав",
+      "last_name": "Ляднов",
+      "discipline": 7,
+      "role": 21,
+      "photo": "players/lyadnov.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2021-01-21",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 36,
+    "fields": {
+      "nickname": "Nick",
+      "first_name": "Никита",
+      "last_name": "Глебов",
+      "discipline": 7,
+      "role": 21,
+      "photo": "players/glebov.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2021-01-21",
+      "bio": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.player",
+    "pk": 37,
+    "fields": {
+      "nickname": "Mr_Glaider",
+      "first_name": "Александр",
+      "last_name": "Никитин",
+      "discipline": 7,
+      "role": 6,
+      "photo": "players/frame_FoWhabz.webp",
+      "country": "Россия",
+      "birth_date": null,
+      "join_date": "2017-01-22",
+      "bio": "Родной город - Тольятти;\r\nИграет в HS с технической альфы;\r\nЛюбимый формат - Поля сражений;\r\nЛюбимый архетип - Контроль прист;",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 1,
+    "fields": {
+      "player": 1,
+      "platform": "vk",
+      "url": "https://vk.com/yatoro_gxd",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 2,
+    "fields": {
+      "player": 1,
+      "platform": "twitch",
+      "url": "https://twitch.tv/yatororain",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 3,
+    "fields": {
+      "player": 1,
+      "platform": "instagram",
+      "url": "https://instagram.com/yatoro104",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 4,
+    "fields": {
+      "player": 3,
+      "platform": "twitter",
+      "url": "https://twitter.com/Collapse1221",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 5,
+    "fields": {
+      "player": 3,
+      "platform": "vk",
+      "url": "https://vk.com/tscollapse",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 6,
+    "fields": {
+      "player": 3,
+      "platform": "twitch",
+      "url": "https://twitch.tv/collapse1221",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 7,
+    "fields": {
+      "player": 8,
+      "platform": "twitter",
+      "url": "https://twitter.com/Silentdota2",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 8,
+    "fields": {
+      "player": 8,
+      "platform": "instagram",
+      "url": "https://instagram.com/silentag_",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 9,
+    "fields": {
+      "player": 8,
+      "platform": "vk",
+      "url": "https://vk.com/silent_dota2",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 10,
+    "fields": {
+      "player": 9,
+      "platform": "vk",
+      "url": "https://vk.com/itsrealkorb3n",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 11,
+    "fields": {
+      "player": 9,
+      "platform": "twitter",
+      "url": "https://twitter.com/korb3n",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 12,
+    "fields": {
+      "player": 9,
+      "platform": "twitch",
+      "url": "https://twitch.tv/korb3n",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 13,
+    "fields": {
+      "player": 10,
+      "platform": "twitter",
+      "url": "https://twitter.com/DKLana",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 14,
+    "fields": {
+      "player": 10,
+      "platform": "instagram",
+      "url": "https://instagram.com/dklana",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 15,
+    "fields": {
+      "player": 11,
+      "platform": "telegram",
+      "url": "https://telegram.org/sikleqq",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 16,
+    "fields": {
+      "player": 11,
+      "platform": "twitch",
+      "url": "https://twitch.tv/sikle",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 17,
+    "fields": {
+      "player": 11,
+      "platform": "vk",
+      "url": "https://vk.com/id83160062",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 18,
+    "fields": {
+      "player": 11,
+      "platform": "instagram",
+      "url": "https://instagram.com/siklelouch",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 19,
+    "fields": {
+      "player": 5,
+      "platform": "twitter",
+      "url": "https://twitter.com/miposhka",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 20,
+    "fields": {
+      "player": 5,
+      "platform": "instagram",
+      "url": "https://instagram.com/miposhqa",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 21,
+    "fields": {
+      "player": 5,
+      "platform": "vk",
+      "url": "https://vk.com/miposhkapage",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 22,
+    "fields": {
+      "player": 5,
+      "platform": "twitch",
+      "url": "https://twitch.tv/mipooshka",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 23,
+    "fields": {
+      "player": 13,
+      "platform": "twitch",
+      "url": "https://twitch.tv/donk1221",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 24,
+    "fields": {
+      "player": 13,
+      "platform": "twitter",
+      "url": "https://twitter.com/donk1337",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 25,
+    "fields": {
+      "player": 14,
+      "platform": "vk",
+      "url": "https://vk.com/magixx",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 26,
+    "fields": {
+      "player": 14,
+      "platform": "instagram",
+      "url": "https://instagram.com/magixx300",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 27,
+    "fields": {
+      "player": 14,
+      "platform": "twitch",
+      "url": "https://twitch.tv/magixx718",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 28,
+    "fields": {
+      "player": 14,
+      "platform": "twitter",
+      "url": "https://twitter.com/magixx772",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 29,
+    "fields": {
+      "player": 16,
+      "platform": "vk",
+      "url": "https://vk.com/zont1xoff",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 30,
+    "fields": {
+      "player": 16,
+      "platform": "twitch",
+      "url": "https://twitch.tv/zont1xm",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 31,
+    "fields": {
+      "player": 16,
+      "platform": "instagram",
+      "url": "https://instagram.com/zont1xm",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 32,
+    "fields": {
+      "player": 16,
+      "platform": "twitter",
+      "url": "https://twitter.com/zont1xM",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 33,
+    "fields": {
+      "player": 19,
+      "platform": "instagram",
+      "url": "https://instagram.com/chopp427",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 34,
+    "fields": {
+      "player": 19,
+      "platform": "twitter",
+      "url": "https://twitter.com/chopperis",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 35,
+    "fields": {
+      "player": 19,
+      "platform": "twitch",
+      "url": "https://twitch.tv/chopperinho",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 36,
+    "fields": {
+      "player": 21,
+      "platform": "twitter",
+      "url": "https://twitter.com/dimasotf",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 37,
+    "fields": {
+      "player": 21,
+      "platform": "vk",
+      "url": "https://vk.com/sotfclub",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 38,
+    "fields": {
+      "player": 21,
+      "platform": "twitch",
+      "url": "https://twitch.tv/s0tf1k",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 39,
+    "fields": {
+      "player": 31,
+      "platform": "twitch",
+      "url": "https://twitch.tv/silvername",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 40,
+    "fields": {
+      "player": 31,
+      "platform": "instagram",
+      "url": "https://instagram.com/silvernamehs",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 41,
+    "fields": {
+      "player": 31,
+      "platform": "vk",
+      "url": "https://vk.com/silvernamehs",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 42,
+    "fields": {
+      "player": 31,
+      "platform": "twitter",
+      "url": "https://twitter.com/SilverNameHS",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 43,
+    "fields": {
+      "player": 31,
+      "platform": "youtube",
+      "url": "https://youtube.com/channel/UCqQrewSyOB-64dnwnL3FuCQ",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 44,
+    "fields": {
+      "player": 37,
+      "platform": "instagram",
+      "url": "https://instagram.com/mr.glaider",
+      "username": ""
+    }
+  },
+  {
+    "model": "core.playersociallink",
+    "pk": 45,
+    "fields": {
+      "player": 37,
+      "platform": "twitter",
+      "url": "https://twitter.com/Mr_GlaideR",
+      "username": ""
     }
   },
   {
@@ -800,8 +1365,8 @@
       "prize_pool": "40018195.00",
       "prize_won": "18208300.00",
       "date": "2021-10-17",
-      "image": "",
-      "description": "Историческая победа на главном турнире года"
+      "image": "achievements/i_2.webp",
+      "description": "Главный турнир года по Dota 2. Team Spirit сенсационно выиграли TI10, победив PSG.LGD в гранд-финале 3:2 и став одной из самых молодых чемпионских команд в истории."
     }
   },
   {
@@ -810,12 +1375,12 @@
     "fields": {
       "title": "The International 2023",
       "discipline": 1,
-      "place": 2,
-      "prize_pool": "15000000.00",
-      "prize_won": "3000000.00",
+      "place": 1,
+      "prize_pool": "3000000.00",
+      "prize_won": "1521362.00",
       "date": "2023-10-29",
-      "image": "achievements/Cosmetic_icon_The_International_2023_HUD.png",
-      "description": "Второе место на TI12"
+      "image": "achievements/maxresdefault.jpg",
+      "description": "Team Spirit стали двукратными чемпионами The International, разгромив Gaimin Gladiators 3:0 в финале."
     }
   },
   {
@@ -828,49 +1393,81 @@
       "prize_pool": "15000000.00",
       "prize_won": "5000000.00",
       "date": "2023-07-30",
-      "image": "",
-      "description": "Победа на крупном турнире в Саудовской Аравии"
+      "image": "achievements/RIYADH-gamers8-dota.jpg",
+      "description": "Один из самых крупных коммерческих турниров в истории Dota 2. Team Spirit уверенно прошли плей-офф и победили Gaimin Gladiators."
     }
   },
   {
     "model": "core.achievement",
     "pk": 4,
     "fields": {
-      "title": "ESL One Berlin Major 2023",
+      "title": "Esports World Cup 2025",
       "discipline": 1,
-      "place": 3,
-      "prize_pool": "1000000.00",
-      "prize_won": "150000.00",
-      "date": "2023-05-07",
-      "image": "",
-      "description": ""
+      "place": 1,
+      "prize_pool": "5000000.00",
+      "prize_won": "1000000.00",
+      "date": "2025-07-07",
+      "image": "achievements/i_3.webp",
+      "description": "Один из крупнейших мультидисциплинарных ивентов. Team Spirit выиграли финал со счётом 3:0."
     }
   },
   {
     "model": "core.achievement",
     "pk": 5,
     "fields": {
-      "title": "DreamLeague Season 19",
+      "title": "DreamLeague Season 25",
       "discipline": 1,
       "place": 1,
       "prize_pool": "1000000.00",
-      "prize_won": "400000.00",
-      "date": "2023-02-26",
-      "image": "",
-      "description": ""
+      "prize_won": "250000.00",
+      "date": "2025-03-26",
+      "image": "achievements/maxresdefault_1.jpg",
+      "description": "Онлайн-турнир высокого уровня, где Team Spirit показали стабильную форму и выиграли финал со счётом 3:2."
     }
   },
   {
     "model": "core.match",
-    "pk": 1,
+    "pk": 9,
     "fields": {
       "discipline": 1,
-      "tournament": "DreamLeague Season 24",
-      "opponent": "Team Liquid",
-      "opponent_logo": "",
-      "date": "2026-04-10T21:27:24.954Z",
-      "status": "upcoming",
+      "tournament": "PGL Wallachia Season 8",
+      "opponent": "Team Falcons",
+      "opponent_logo": "opponents/falcon.webp",
+      "date": "2026-04-24T11:00:00Z",
+      "status": "finished",
       "score_team": 0,
+      "score_opponent": 2,
+      "stream_url": "",
+      "vod_url": ""
+    }
+  },
+  {
+    "model": "core.match",
+    "pk": 10,
+    "fields": {
+      "discipline": 1,
+      "tournament": "PGL Wallachia Season 8",
+      "opponent": "BetBoom Team",
+      "opponent_logo": "opponents/bb.webp",
+      "date": "2026-04-23T16:20:00Z",
+      "status": "finished",
+      "score_team": 0,
+      "score_opponent": 2,
+      "stream_url": "",
+      "vod_url": ""
+    }
+  },
+  {
+    "model": "core.match",
+    "pk": 11,
+    "fields": {
+      "discipline": 1,
+      "tournament": "PGL Wallachia Season 8",
+      "opponent": "Xtreme Gaming",
+      "opponent_logo": "opponents/xtreme.webp",
+      "date": "2026-04-22T13:50:00Z",
+      "status": "finished",
+      "score_team": 2,
       "score_opponent": 0,
       "stream_url": "",
       "vod_url": ""
@@ -878,29 +1475,13 @@
   },
   {
     "model": "core.match",
-    "pk": 2,
+    "pk": 12,
     "fields": {
       "discipline": 1,
-      "tournament": "DreamLeague Season 24",
-      "opponent": "Tundra Esports",
-      "opponent_logo": "",
-      "date": "2026-04-12T21:27:24.954Z",
-      "status": "upcoming",
-      "score_team": 0,
-      "score_opponent": 0,
-      "stream_url": "",
-      "vod_url": ""
-    }
-  },
-  {
-    "model": "core.match",
-    "pk": 3,
-    "fields": {
-      "discipline": 1,
-      "tournament": "ESL One Bangkok",
-      "opponent": "OG",
-      "opponent_logo": "",
-      "date": "2026-04-05T21:27:24.954Z",
+      "tournament": "PGL Wallachia Season 8",
+      "opponent": "Natus Vincere",
+      "opponent_logo": "opponents/navi.webp",
+      "date": "2026-04-21T07:10:00Z",
       "status": "finished",
       "score_team": 2,
       "score_opponent": 1,
@@ -910,61 +1491,45 @@
   },
   {
     "model": "core.match",
-    "pk": 4,
+    "pk": 13,
     "fields": {
       "discipline": 1,
-      "tournament": "ESL One Bangkok",
-      "opponent": "BetBoom Team",
-      "opponent_logo": "",
-      "date": "2026-04-02T21:27:24.954Z",
+      "tournament": "PGL Wallachia Season 8",
+      "opponent": "GamerLegion",
+      "opponent_logo": "opponents/gL.webp",
+      "date": "2026-04-20T07:10:00Z",
       "status": "finished",
-      "score_team": 2,
-      "score_opponent": 0,
-      "stream_url": "",
-      "vod_url": ""
-    }
-  },
-  {
-    "model": "core.match",
-    "pk": 5,
-    "fields": {
-      "discipline": 1,
-      "tournament": "DreamLeague Season 24",
-      "opponent": "Team Liquid",
-      "opponent_logo": "",
-      "date": "2026-04-27T14:10:28.233Z",
-      "status": "upcoming",
       "score_team": 0,
-      "score_opponent": 0,
+      "score_opponent": 2,
       "stream_url": "",
       "vod_url": ""
     }
   },
   {
     "model": "core.match",
-    "pk": 6,
+    "pk": 14,
     "fields": {
       "discipline": 1,
-      "tournament": "DreamLeague Season 24",
-      "opponent": "Tundra Esports",
-      "opponent_logo": "",
-      "date": "2026-04-29T14:10:28.233Z",
-      "status": "upcoming",
-      "score_team": 0,
-      "score_opponent": 0,
+      "tournament": "PGL Wallachia Season 8",
+      "opponent": "Team Falcons",
+      "opponent_logo": "opponents/falcon_29pKXqR.webp",
+      "date": "2026-04-19T12:40:00Z",
+      "status": "finished",
+      "score_team": 1,
+      "score_opponent": 2,
       "stream_url": "",
       "vod_url": ""
     }
   },
   {
     "model": "core.match",
-    "pk": 7,
+    "pk": 15,
     "fields": {
       "discipline": 1,
-      "tournament": "ESL One Bangkok",
-      "opponent": "OG",
-      "opponent_logo": "",
-      "date": "2026-04-22T14:10:28.233Z",
+      "tournament": "PGL Wallachia Season 8",
+      "opponent": "Vici Gaming",
+      "opponent_logo": "opponents/vici.webp",
+      "date": "2026-04-18T07:10:00Z",
       "status": "finished",
       "score_team": 2,
       "score_opponent": 1,
@@ -974,124 +1539,214 @@
   },
   {
     "model": "core.match",
-    "pk": 8,
+    "pk": 16,
     "fields": {
       "discipline": 1,
-      "tournament": "ESL One Bangkok",
-      "opponent": "BetBoom Team",
-      "opponent_logo": "",
-      "date": "2026-04-19T14:10:28.233Z",
+      "tournament": "PREMIER SERIES",
+      "opponent": "GamerLegion",
+      "opponent_logo": "opponents/gL_gWGkrHL.webp",
+      "date": "2026-04-09T08:10:00Z",
       "status": "finished",
-      "score_team": 2,
-      "score_opponent": 0,
+      "score_team": 1,
+      "score_opponent": 2,
+      "stream_url": "",
+      "vod_url": ""
+    }
+  },
+  {
+    "model": "core.match",
+    "pk": 17,
+    "fields": {
+      "discipline": 1,
+      "tournament": "PREMIER SERIES",
+      "opponent": "Nigma Galaxy",
+      "opponent_logo": "",
+      "date": "2026-04-08T11:10:00Z",
+      "status": "finished",
+      "score_team": 1,
+      "score_opponent": 2,
       "stream_url": "",
       "vod_url": ""
     }
   },
   {
     "model": "core.news",
-    "pk": 1,
+    "pk": 9,
     "fields": {
-      "title": "Team Spirit побеждает на ESL One Bangkok",
-      "slug": "team-spirit-esl-one-bangkok-victory",
+      "title": "Team Spirit уверенно обыграли NAVI на групповом этапе",
+      "slug": "spirit-vs-navi-group-2026",
+      "category": "result",
+      "discipline": 2,
+      "image": "news/photo1.jpeg",
+      "excerpt": "Team Spirit уверенно начали турнир, обыграв NAVI без особых проблем.",
+      "content": "Team Spirit одержали уверенную победу над NAVI в рамках группового этапа турнира.\r\n\r\nКоллектив с первых раундов захватил инициативу и не позволил сопернику навязать свою игру. Особенно уверенно команда выглядела на карте Mirage, где полностью контролировала экономику противника.\r\n\r\nЭта победа укрепила позиции Team Spirit в группе и повысила шансы на выход в плей-офф.",
+      "is_featured": false,
+      "is_published": true,
+      "views": 1,
+      "created_at": "2026-05-06T00:29:25.345Z",
+      "updated_at": "2026-05-06T00:29:25.345Z"
+    }
+  },
+  {
+    "model": "core.news",
+    "pk": 10,
+    "fields": {
+      "title": "Yatoro стал MVP матча против Team Liquid",
+      "slug": "yatoro-mvp-liquid-2026",
       "category": "result",
       "discipline": 1,
-      "image": "",
-      "excerpt": "Наша команда одержала уверенную победу на турнире ESL One Bangkok, обыграв в финале OG со счётом 3:1.",
-      "content": "Team Spirit продолжает демонстрировать великолепную форму!\n\nНа турнире ESL One Bangkok наши ребята показали отличную игру и заслуженно взяли первое место. В финале мы встретились с командой OG и одержали победу со счётом 3:1.\n\nMVP турнира был признан Collapse за его невероятную игру на Mars и Axe.\n\nБлагодарим всех фанатов за поддержку!",
-      "is_featured": true,
-      "is_published": true,
-      "views": 2,
-      "created_at": "2026-04-07T21:27:24.959Z",
-      "updated_at": "2026-04-07T21:27:24.960Z"
-    }
-  },
-  {
-    "model": "core.news",
-    "pk": 2,
-    "fields": {
-      "title": "Анонс нового состава по CS2",
-      "slug": "cs2-roster-announcement",
-      "category": "roster",
-      "discipline": 2,
-      "image": "",
-      "excerpt": "Team Spirit объявляет о формировании нового состава по Counter-Strike 2.",
-      "content": "Мы рады объявить о создании нового состава по Counter-Strike 2!\n\nПосле долгих переговоров и просмотров мы собрали команду из талантливых игроков, которые будут представлять Team Spirit на международной арене CS2.\n\nПодробности о составе будут объявлены в ближайшее время. Следите за нашими социальными сетями!",
-      "is_featured": true,
-      "is_published": true,
-      "views": 3,
-      "created_at": "2026-04-07T21:27:24.962Z",
-      "updated_at": "2026-04-07T21:27:24.962Z"
-    }
-  },
-  {
-    "model": "core.news",
-    "pk": 3,
-    "fields": {
-      "title": "Интервью с Miposhka после победы на TI",
-      "slug": "miposhka-ti-interview",
-      "category": "interview",
-      "discipline": 1,
-      "image": "",
-      "excerpt": "Капитан Team Spirit рассказал о подготовке к турниру и эмоциях после победы.",
-      "content": "Ярослав \"Miposhka\" Найдёнов поделился впечатлениями после исторической победы на The International.\n\n\"Это был долгий путь. Мы много работали, анализировали соперников и верили друг в друга. Когда прозвучал последний GG, я не мог поверить, что мы сделали это.\"\n\nКапитан также рассказал о планах команды на будущее и поблагодарил всех фанатов за невероятную поддержку.",
+      "image": "news/photo2.jpeg",
+      "excerpt": "Керри Team Spirit показал выдающуюся игру и стал MVP встречи.",
+      "content": "Игрок Team Spirit Yatoro продемонстрировал блестящую игру в матче против Team Liquid.\r\n\r\nОн закончил встречу с впечатляющим KDA и стал ключевым фактором победы своей команды. Его грамотные перемещения по карте и участие в командных драках позволили Spirit доминировать на протяжении всей игры.\r\n\r\nЭксперты отметили высокий уровень индивидуальной формы игрока.",
       "is_featured": false,
       "is_published": true,
       "views": 2,
-      "created_at": "2026-04-07T21:27:24.962Z",
-      "updated_at": "2026-04-07T21:27:24.962Z"
+      "created_at": "2026-05-06T00:30:31.903Z",
+      "updated_at": "2026-05-06T00:30:31.903Z"
     }
   },
   {
-    "model": "core.partner",
-    "pk": 1,
+    "model": "core.news",
+    "pk": 11,
     "fields": {
-      "name": "PARI",
-      "tier": "title",
-      "logo": "",
-      "website": "https://pari.ru",
-      "description": "",
-      "order": 1,
-      "is_active": true
+      "title": "Team Spirit проиграли G2 в упорной борьбе",
+      "slug": "spirit-vs-g2-loss-2026",
+      "category": "result",
+      "discipline": 2,
+      "image": "news/photo3.jpeg",
+      "excerpt": "Матч завершился поражением Team Spirit после напряжённой серии.",
+      "content": "Team Spirit уступили G2 в напряжённом матче, который длился три карты.\r\n\r\nНесмотря на хорошее начало, команда не смогла удержать преимущество во второй половине встречи. Несколько ошибок в ключевых раундах стоили коллективу победы.\r\n\r\nТренерский штаб отметил, что команда сделает выводы перед следующими играми.",
+      "is_featured": false,
+      "is_published": true,
+      "views": 0,
+      "created_at": "2026-05-06T00:31:54.591Z",
+      "updated_at": "2026-05-06T00:31:54.591Z"
     }
   },
   {
-    "model": "core.partner",
-    "pk": 2,
+    "model": "core.news",
+    "pk": 12,
     "fields": {
-      "name": "HyperX",
-      "tier": "main",
-      "logo": "",
-      "website": "https://hyperx.com",
-      "description": "",
-      "order": 1,
-      "is_active": true
+      "title": "Miposhka рассказал о подготовке к турниру",
+      "slug": "miposhka-preparation-2026",
+      "category": "interview",
+      "discipline": 1,
+      "image": "news/photo4.jpeg",
+      "excerpt": "Капитан Team Spirit поделился деталями тренировочного процесса.",
+      "content": "Капитан Team Spirit Miposhka рассказал о подготовке команды к ближайшему турниру.\r\n\r\nПо его словам, коллектив активно работает над стратегиями и анализирует соперников. Особое внимание уделяется командной синергии и коммуникации.\r\n\r\nОн также отметил, что команда находится в хорошей форме и готова бороться за высокие места.",
+      "is_featured": false,
+      "is_published": true,
+      "views": 3,
+      "created_at": "2026-05-06T00:33:09.195Z",
+      "updated_at": "2026-05-06T00:33:09.195Z"
     }
   },
   {
-    "model": "core.partner",
-    "pk": 3,
+    "model": "core.news",
+    "pk": 13,
     "fields": {
-      "name": "ASUS ROG",
-      "tier": "main",
-      "logo": "",
-      "website": "https://rog.asus.com",
-      "description": "",
-      "order": 2,
-      "is_active": true
+      "title": "Team Spirit анонсировали участие в новом турнире",
+      "slug": "spirit-new-tournament-announce",
+      "category": "announcement",
+      "discipline": 2,
+      "image": "news/photo5.jpeg",
+      "excerpt": "Команда подтвердила участие в международном турнире.",
+      "content": "Team Spirit официально подтвердили участие в новом международном турнире по CS2.\r\n\r\nСоревнование соберёт сильнейшие команды мира и станет важной проверкой формы для коллектива. Подготовка к турниру уже началась.\r\n\r\nФанаты ожидают уверенного выступления команды.",
+      "is_featured": false,
+      "is_published": true,
+      "views": 0,
+      "created_at": "2026-05-06T00:34:16.151Z",
+      "updated_at": "2026-05-06T00:34:16.151Z"
     }
   },
   {
-    "model": "core.partner",
-    "pk": 4,
+    "model": "core.news",
+    "pk": 14,
     "fields": {
-      "name": "Red Bull",
-      "tier": "official",
-      "logo": "",
-      "website": "https://redbull.com",
-      "description": "",
-      "order": 1,
-      "is_active": true
+      "title": "Collapse вернулся к тренировкам с командой",
+      "slug": "collapse-return-2026",
+      "category": "roster",
+      "discipline": 1,
+      "image": "news/frame.webp",
+      "excerpt": "Игрок Team Spirit вновь присоединился к тренировочному процессу.",
+      "content": "Игрок Team Spirit Collapse вернулся к тренировкам после временного отсутствия.\r\n\r\nПо информации команды, он уже участвует в спаррингах и постепенно набирает форму. Его возвращение должно усилить состав перед важными матчами.\r\n\r\nФанаты положительно отреагировали на эту новость.",
+      "is_featured": false,
+      "is_published": true,
+      "views": 1,
+      "created_at": "2026-05-06T00:35:36.969Z",
+      "updated_at": "2026-05-06T00:35:36.969Z"
+    }
+  },
+  {
+    "model": "core.news",
+    "pk": 15,
+    "fields": {
+      "title": "Team Spirit вышли в плей-офф турнира",
+      "slug": "spirit-playoff-2026",
+      "category": "result",
+      "discipline": 2,
+      "image": "news/photo7.jpeg",
+      "excerpt": "Команда успешно прошла групповой этап.",
+      "content": "Team Spirit обеспечили себе выход в плей-офф турнира, заняв высокое место в группе.\r\n\r\nКоманда продемонстрировала стабильную игру и уверенно справилась с большинством соперников.\r\n\r\nСледующий этап станет серьёзным испытанием для коллектива.",
+      "is_featured": false,
+      "is_published": true,
+      "views": 4,
+      "created_at": "2026-05-06T00:36:42.009Z",
+      "updated_at": "2026-05-06T00:36:42.009Z"
+    }
+  },
+  {
+    "model": "core.news",
+    "pk": 16,
+    "fields": {
+      "title": "Yatoro рассказал о мете в новом патче",
+      "slug": "yatoro-meta-2026",
+      "category": "interview",
+      "discipline": 1,
+      "image": "news/photo8.jpeg",
+      "excerpt": "Игрок поделился мнением о текущем состоянии игры.",
+      "content": "Yatoro рассказал о текущей мете в Dota 2 после выхода нового патча.\r\n\r\nПо его словам, игра стала более динамичной, а выбор героев сильно влияет на исход матчей. Он отметил важность гибкости стратегии.\r\n\r\nИгрок также подчеркнул, что команды продолжают адаптироваться к изменениям.",
+      "is_featured": false,
+      "is_published": true,
+      "views": 2,
+      "created_at": "2026-05-06T00:37:50.517Z",
+      "updated_at": "2026-05-06T00:37:50.517Z"
+    }
+  },
+  {
+    "model": "core.news",
+    "pk": 17,
+    "fields": {
+      "title": "Team Spirit проиграли решающий матч группы",
+      "slug": "spirit-group-loss-2026",
+      "category": "result",
+      "discipline": 2,
+      "image": "news/photo9.jpeg",
+      "excerpt": "Команда не смогла выйти с первого места в группе.",
+      "content": "Team Spirit уступили в решающем матче группового этапа.\r\n\r\nНесмотря на уверенную игру в начале, команда допустила ряд ошибок в концовке. Это не позволило занять первое место в группе.\r\n\r\nКоллектив продолжит выступление в плей-офф с более сложной сеткой.",
+      "is_featured": false,
+      "is_published": true,
+      "views": 1,
+      "created_at": "2026-05-06T00:38:59.126Z",
+      "updated_at": "2026-05-06T00:38:59.126Z"
+    }
+  },
+  {
+    "model": "core.news",
+    "pk": 18,
+    "fields": {
+      "title": "Team Spirit обновили тренировочный процесс",
+      "slug": "spirit-training-update-2026",
+      "category": "other",
+      "discipline": 1,
+      "image": "news/photo10.jpeg",
+      "excerpt": "Команда внедрила новые методы подготовки.",
+      "content": "Team Spirit сообщили об обновлении тренировочного процесса.\r\n\r\nТеперь команда уделяет больше внимания аналитике и разбору соперников. Также были внедрены новые подходы к командной коммуникации.\r\n\r\nПо словам менеджмента, это должно положительно сказаться на результатах.",
+      "is_featured": false,
+      "is_published": true,
+      "views": 2,
+      "created_at": "2026-05-06T00:39:56.464Z",
+      "updated_at": "2026-05-06T00:41:11.673Z"
     }
   },
   {
@@ -1100,7 +1755,7 @@
     "fields": {
       "name": "Secretlab",
       "tier": "technical",
-      "logo": "",
+      "logo": "partners/secretlab_j5uD0D9.png",
       "website": "https://secretlab.co",
       "description": "",
       "order": 1,
@@ -1108,22 +1763,2635 @@
     }
   },
   {
+    "model": "core.partner",
+    "pk": 6,
+    "fields": {
+      "name": "BetBoom",
+      "tier": "title",
+      "logo": "partners/betboom.jpg",
+      "website": "https://betboom.ru/",
+      "description": "Российская букмекерская компания, основанная в 2011 году.",
+      "order": 1,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.partner",
+    "pk": 7,
+    "fields": {
+      "name": "Nike",
+      "tier": "title",
+      "logo": "partners/nike.webp",
+      "website": "https://www.nike.com/",
+      "description": "Американская транснациональная компания, специализирующаяся на спортивной одежде и обуви.",
+      "order": 2,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.partner",
+    "pk": 8,
+    "fields": {
+      "name": "Red Bull",
+      "tier": "title",
+      "logo": "partners/redbull.jpg",
+      "website": "https://www.redbull.com/ee-et",
+      "description": "Австрийская транснациональная компания, производитель энергетических напитков",
+      "order": 3,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.partner",
+    "pk": 9,
+    "fields": {
+      "name": "SecretLab",
+      "tier": "title",
+      "logo": "partners/secretlab.png",
+      "website": "https://secretlab.eu/",
+      "description": "Cингапурская мебельная компания, основанная Яном Ангом и Алариком Чу в 2014 году",
+      "order": 4,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.partner",
+    "pk": 10,
+    "fields": {
+      "name": "BetBoom",
+      "tier": "main",
+      "logo": "partners/betboom_9FW3V1m.jpg",
+      "website": "https://betboom.ru/",
+      "description": "",
+      "order": 1,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.partner",
+    "pk": 11,
+    "fields": {
+      "name": "Parimatch",
+      "tier": "main",
+      "logo": "partners/Parimatch.png",
+      "website": "https://pari.ru/",
+      "description": "Международная букмекерская компания, работающая в Европе.",
+      "order": 2,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.partner",
+    "pk": 12,
+    "fields": {
+      "name": "Yandex Eats",
+      "tier": "main",
+      "logo": "partners/yandexeat.webp",
+      "website": "https://eda.yandex.ru/",
+      "description": "Cервис заказа быстрой доставки еды из ресторанов и продуктов из магазинов через мобильные приложения или веб-сайт.",
+      "order": 3,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.partner",
+    "pk": 13,
+    "fields": {
+      "name": "Bitget",
+      "tier": "main",
+      "logo": "partners/Bitget-Wallet.jpg",
+      "website": "https://www.bitget.com/ru",
+      "description": "Централизованная криптовалютная биржа.",
+      "order": 4,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.partner",
+    "pk": 14,
+    "fields": {
+      "name": "JetTravel",
+      "tier": "official",
+      "logo": "partners/jettravel.jpg",
+      "website": "https://www.jettravel.ru/",
+      "description": "",
+      "order": 1,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.partner",
+    "pk": 15,
+    "fields": {
+      "name": "InScope Consulting",
+      "tier": "official",
+      "logo": "partners/inscope_logo3copy.webp",
+      "website": "https://www.inscopegroup.com/",
+      "description": "",
+      "order": 2,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.partner",
+    "pk": 16,
+    "fields": {
+      "name": "ASUS ROG",
+      "tier": "technical",
+      "logo": "partners/maxresdefault_2.jpg",
+      "website": "https://rog.asus.com/",
+      "description": "",
+      "order": 2,
+      "is_active": true
+    }
+  },
+  {
     "model": "core.teaminfo",
     "pk": 1,
     "fields": {
-      "about": "Team Spirit — российская киберспортивная организация, основанная в 2015 году.\n\nГлавным достижением команды является победа на The International 2021 — крупнейшем турнире по Dota 2 с призовым фондом более $40 миллионов. Эта историческая победа сделала Team Spirit одной из самых узнаваемых киберспортивных организаций в мире.\n\nTeam Spirit представлен в нескольких ведущих киберспортивных дисциплинах и продолжает развиваться, привлекая талантливых игроков со всего мира.",
+      "about": "Team Spirit — российская киберспортивная организация, основанная в 2015 году.\r\n\r\nГлавным достижением команды является победа на The International 2021 — крупнейшем турнире по Dota 2 с призовым фондом более $40 миллионов. Эта историческая победа сделала Team Spirit одной из самых узнаваемых киберспортивных организаций в мире.\r\n\r\nTeam Spirit представлен в нескольких ведущих киберспортивных дисциплинах и продолжает развиваться, привлекая талантливых игроков со всего мира.",
       "founded_year": 2015,
-      "headquarters": "Москва, Россия",
+      "headquarters": "Белград, Сербия",
       "total_earnings": "20000000.00",
       "logo": "",
-      "banner": "",
+      "banner": "team/preview.webp",
       "twitter": "https://twitter.com/Team__Spirit",
       "instagram": "https://instagram.com/team__spirit",
-      "youtube": "https://youtube.com/@TeamSpiritDota2",
+      "youtube": "https://youtube.com/channel/UCSyKkR1BFlJ1915TqXHkclQ",
       "twitch": "https://twitch.tv/team_spirit",
-      "vk": "https://vk.com/teamspiritru",
-      "telegram": "https://t.me/team_spirit",
-      "contact_email": "info@teamspirit.ru"
+      "vk": "https://vk.com/team_spirit",
+      "telegram": "https://t.me/Team_Spirit_Official",
+      "contact_email": "km@teamspirit.gg"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2026-04-24T14:13:14.815Z",
+      "user": ["admin"],
+      "content_type": ["core", "discipline"],
+      "object_id": "2",
+      "object_repr": "Counter-Strike 2",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043a\\u043e\\u043d\\u043a\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2026-04-24T14:28:14.300Z",
+      "user": ["admin"],
+      "content_type": ["core", "discipline"],
+      "object_id": "2",
+      "object_repr": "Counter-Strike 2",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2026-04-24T14:28:32.872Z",
+      "user": ["admin"],
+      "content_type": ["core", "discipline"],
+      "object_id": "2",
+      "object_repr": "Counter-Strike 2",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043a\\u043e\\u043d\\u043a\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2026-04-24T14:37:37.896Z",
+      "user": ["admin"],
+      "content_type": ["core", "discipline"],
+      "object_id": "2",
+      "object_repr": "Counter-Strike 2",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043a\\u043e\\u043d\\u043a\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2026-04-24T14:38:20.269Z",
+      "user": ["admin"],
+      "content_type": ["core", "discipline"],
+      "object_id": "1",
+      "object_repr": "Dota 2",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043a\\u043e\\u043d\\u043a\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2026-04-24T14:39:04.434Z",
+      "user": ["admin"],
+      "content_type": ["core", "discipline"],
+      "object_id": "3",
+      "object_repr": "PUBG Mobile",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043a\\u043e\\u043d\\u043a\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2026-04-24T14:41:53.477Z",
+      "user": ["admin"],
+      "content_type": ["core", "achievement"],
+      "object_id": "2",
+      "object_repr": "The International 2023 - 2 место",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2026-05-02T21:30:02.071Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "1",
+      "object_repr": "Yatoro (Керри)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2026-05-02T21:33:09.720Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "2",
+      "object_repr": "Larl (Мидер)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\", \"\\u0414\\u0430\\u0442\\u0430 \\u0440\\u043e\\u0436\\u0434\\u0435\\u043d\\u0438\\u044f\", \"\\u0414\\u0430\\u0442\\u0430 \\u0432\\u0441\\u0442\\u0443\\u043f\\u043b\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2026-05-02T21:34:24.998Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "2",
+      "object_repr": "Larl (Мидер)",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2026-05-02T21:35:17.190Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "1",
+      "object_repr": "Yatoro (Керри)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0440\\u043e\\u0436\\u0434\\u0435\\u043d\\u0438\\u044f\", \"\\u0414\\u0430\\u0442\\u0430 \\u0432\\u0441\\u0442\\u0443\\u043f\\u043b\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2026-05-02T21:35:55.982Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "1",
+      "object_repr": "Yatoro (Керри)",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2026-05-02T21:38:04.368Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "3",
+      "object_repr": "Collapse (Оффлейнер)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\", \"\\u0414\\u0430\\u0442\\u0430 \\u0440\\u043e\\u0436\\u0434\\u0435\\u043d\\u0438\\u044f\", \"\\u0414\\u0430\\u0442\\u0430 \\u0432\\u0441\\u0442\\u0443\\u043f\\u043b\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2026-05-02T21:39:31.301Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "5",
+      "object_repr": "Miposhka (Капитан)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0440\\u043e\\u0436\\u0434\\u0435\\u043d\\u0438\\u044f\", \"\\u0414\\u0430\\u0442\\u0430 \\u0432\\u0441\\u0442\\u0443\\u043f\\u043b\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2026-05-02T21:40:08.371Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "4",
+      "object_repr": "Mira (Саппорт)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2026-05-02T21:41:31.097Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "6",
+      "object_repr": "Rue (Саппорт)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2026-05-02T21:42:12.668Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "6",
+      "object_repr": "Rue (Саппорт)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2026-05-02T21:43:31.350Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "7",
+      "object_repr": "Panto (Саппорт)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2026-05-02T21:46:20.093Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "8",
+      "object_repr": "Silent (Тренер)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2026-05-02T21:48:46.761Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "9",
+      "object_repr": "Korb3n (Менеджер)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2026-05-02T21:50:51.178Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "10",
+      "object_repr": "Dklana (Менеджер)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2026-05-02T21:51:16.104Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "10",
+      "object_repr": "Dklana (Менеджер)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0440\\u043e\\u0436\\u0434\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2026-05-02T21:53:22.564Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "11",
+      "object_repr": "Sikle (Аналитик)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2026-05-02T21:53:41.615Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "11",
+      "object_repr": "Sikle (Аналитик)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2026-05-02T21:55:07.214Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "12",
+      "object_repr": "Satanic (Капитан)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2026-05-02T21:57:11.585Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "5",
+      "object_repr": "Miposhka (Капитан)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2026-05-02T22:03:02.687Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "1",
+      "object_repr": "Yatoro (Керри)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0411\\u0438\\u043e\\u0433\\u0440\\u0430\\u0444\\u0438\\u044f\", \"Twitch\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2026-05-04T23:23:55.390Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "1",
+      "object_repr": "Carry",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2026-05-04T23:24:46.972Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "1",
+      "object_repr": "Yatoro (Carry)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u043e\\u043b\\u044c\", \"\\u0411\\u0438\\u043e\\u0433\\u0440\\u0430\\u0444\\u0438\\u044f\"]}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Yatoro - VKontakte\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Yatoro - Twitch\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Yatoro - Instagram\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2026-05-04T23:28:21.985Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "1",
+      "object_repr": "Yatoro (Carry)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0411\\u0438\\u043e\\u0433\\u0440\\u0430\\u0444\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2026-05-04T23:28:42.866Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "1",
+      "object_repr": "Yatoro (Carry)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0411\\u0438\\u043e\\u0433\\u0440\\u0430\\u0444\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2026-05-04T23:29:15.397Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "1",
+      "object_repr": "Yatoro (Carry)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0411\\u0438\\u043e\\u0433\\u0440\\u0430\\u0444\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2026-05-04T23:30:54.619Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "2",
+      "object_repr": "Mid",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2026-05-04T23:31:28.777Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "2",
+      "object_repr": "Lari (Mid)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0438\\u043a\\u043d\\u0435\\u0439\\u043c\", \"\\u0420\\u043e\\u043b\\u044c\", \"\\u0411\\u0438\\u043e\\u0433\\u0440\\u0430\\u0444\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2026-05-04T23:31:32.972Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "2",
+      "object_repr": "Lari (Mid)",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2026-05-04T23:31:54.683Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "3",
+      "object_repr": "Offlane",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2026-05-04T23:33:52.169Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "3",
+      "object_repr": "Collapse (Offlane)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u043e\\u043b\\u044c\", \"\\u0411\\u0438\\u043e\\u0433\\u0440\\u0430\\u0444\\u0438\\u044f\"]}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Collapse - Twitter/X\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Collapse - VKontakte\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Collapse - Twitch\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2026-05-04T23:34:42.500Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "4",
+      "object_repr": "Support",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2026-05-04T23:34:49.110Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "6",
+      "object_repr": "Rue (Support)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u043e\\u043b\\u044c\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2026-05-04T23:35:04.068Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "7",
+      "object_repr": "Panto (Support)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u043e\\u043b\\u044c\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2026-05-04T23:35:50.438Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "5",
+      "object_repr": "Главный тренер",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2026-05-04T23:36:32.860Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "8",
+      "object_repr": "Silent (Главный тренер)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u043e\\u043b\\u044c\", \"\\u0411\\u0438\\u043e\\u0433\\u0440\\u0430\\u0444\\u0438\\u044f\"]}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Silent - Twitter/X\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Silent - Instagram\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Silent - VKontakte\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2026-05-04T23:37:25.972Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "6",
+      "object_repr": "Менеджер",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2026-05-04T23:38:46.755Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "9",
+      "object_repr": "Korb3n (Менеджер)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u043e\\u043b\\u044c\", \"\\u0411\\u0438\\u043e\\u0433\\u0440\\u0430\\u0444\\u0438\\u044f\"]}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Korb3n - VKontakte\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Korb3n - Twitter/X\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Korb3n - Twitch\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2026-05-04T23:40:17.771Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "10",
+      "object_repr": "Dklana (Менеджер)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u043e\\u043b\\u044c\", \"\\u0411\\u0438\\u043e\\u0433\\u0440\\u0430\\u0444\\u0438\\u044f\"]}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Dklana - Twitter/X\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Dklana - Instagram\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2026-05-04T23:40:41.207Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "7",
+      "object_repr": "Аналитик",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+      "action_time": "2026-05-04T23:41:35.375Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "11",
+      "object_repr": "Sikle (Аналитик)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u043e\\u043b\\u044c\"]}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Sikle - Telegram\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Sikle - Twitch\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Sikle - VKontakte\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Sikle - Instagram\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+      "action_time": "2026-05-04T23:42:11.541Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "8",
+      "object_repr": "Benched",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+      "action_time": "2026-05-04T23:43:26.157Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "5",
+      "object_repr": "Miposhka (Benched)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u043e\\u043b\\u044c\", \"\\u0411\\u0438\\u043e\\u0433\\u0440\\u0430\\u0444\\u0438\\u044f\"]}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Miposhka - Twitter/X\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Miposhka - Instagram\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Miposhka - VKontakte\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Miposhka - Twitch\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+      "action_time": "2026-05-04T23:44:06.220Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "12",
+      "object_repr": "Satanic (Benched)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u043e\\u043b\\u044c\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+      "action_time": "2026-05-04T23:46:10.795Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "9",
+      "object_repr": "Rifler",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+      "action_time": "2026-05-04T23:46:27.741Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "13",
+      "object_repr": "Donk (Rifler)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Donk - Twitch\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Donk - Twitter/X\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+      "action_time": "2026-05-04T23:47:13.625Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "10",
+      "object_repr": "IGL",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+      "action_time": "2026-05-04T23:48:55.154Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "14",
+      "object_repr": "Magixxx (IGL)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Magixxx - VKontakte\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Magixxx - Instagram\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Magixxx - Twitch\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Magixxx - Twitter/X\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2026-05-04T23:50:05.710Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "11",
+      "object_repr": "AWPer",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+      "action_time": "2026-05-04T23:50:34.225Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "15",
+      "object_repr": "Sh1ro (AWPer)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+      "action_time": "2026-05-04T23:51:20.580Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "14",
+      "object_repr": "Magixxx (IGL)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+      "action_time": "2026-05-04T23:53:01.871Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "16",
+      "object_repr": "Zont1x (Rifler)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Zont1x - VKontakte\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Zont1x - Twitch\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Zont1x - Instagram\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Zont1x - Twitter/X\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+      "action_time": "2026-05-04T23:53:36.602Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "16",
+      "object_repr": "Zont1x (Rifler)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+      "action_time": "2026-05-04T23:55:57.186Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "17",
+      "object_repr": "Tn1r (Rifler)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+      "action_time": "2026-05-04T23:57:04.761Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "12",
+      "object_repr": "Тренер",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+      "action_time": "2026-05-04T23:58:01.461Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "18",
+      "object_repr": "Hally (Тренер)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+      "action_time": "2026-05-05T00:00:29.987Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "19",
+      "object_repr": "Chopper (Benched)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Chopper - Instagram\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Chopper - Twitter/X\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Chopper - Twitch\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+      "action_time": "2026-05-05T00:02:24.757Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "20",
+      "object_repr": "Lo9d (Менеджер)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+      "action_time": "2026-05-05T00:04:04.328Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "17",
+      "object_repr": "Tn1r (Rifler)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+      "action_time": "2026-05-05T00:04:34.498Z",
+      "user": ["admin"],
+      "content_type": ["core", "discipline"],
+      "object_id": "3",
+      "object_repr": "PUBG Mobile",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+      "action_time": "2026-05-05T00:05:05.720Z",
+      "user": ["admin"],
+      "content_type": ["core", "discipline"],
+      "object_id": "4",
+      "object_repr": "CS Academy",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+      "action_time": "2026-05-05T00:05:11.858Z",
+      "user": ["admin"],
+      "content_type": ["core", "discipline"],
+      "object_id": "1",
+      "object_repr": "Dota 2",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+      "action_time": "2026-05-05T00:05:49.748Z",
+      "user": ["admin"],
+      "content_type": ["core", "discipline"],
+      "object_id": "4",
+      "object_repr": "CS Academy",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+      "action_time": "2026-05-05T00:07:51.899Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "13",
+      "object_repr": "Игрок/Тренер",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+      "action_time": "2026-05-05T00:08:31.403Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "21",
+      "object_repr": "S0tf1k (Игрок/Тренер)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"S0tf1k - Twitter/X\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"S0tf1k - VKontakte\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"S0tf1k - Twitch\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+      "action_time": "2026-05-05T00:09:58.634Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "22",
+      "object_repr": "Kiryasoo (AWPer)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+      "action_time": "2026-05-05T00:11:13.349Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "23",
+      "object_repr": "Soul3 (Менеджер)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+      "action_time": "2026-05-05T00:12:55.114Z",
+      "user": ["admin"],
+      "content_type": ["core", "discipline"],
+      "object_id": "5",
+      "object_repr": "Mobile Legend:BB",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+      "action_time": "2026-05-05T00:14:13.412Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "14",
+      "object_repr": "Roamer",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+      "action_time": "2026-05-05T00:14:23.463Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "24",
+      "object_repr": "Sawo (Roamer)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+      "action_time": "2026-05-05T00:15:26.481Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "15",
+      "object_repr": "Gold Lane",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+      "action_time": "2026-05-05T00:15:37.179Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "25",
+      "object_repr": "Hiko (Gold Lane)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+      "action_time": "2026-05-05T00:16:48.013Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "16",
+      "object_repr": "Middle",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+      "action_time": "2026-05-05T00:16:56.412Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "26",
+      "object_repr": "Sunset Lover (Middle)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+      "action_time": "2026-05-05T00:18:24.198Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "17",
+      "object_repr": "EXP Lane",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+      "action_time": "2026-05-05T00:18:28.352Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "27",
+      "object_repr": "Kid Bomba (EXP Lane)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+      "action_time": "2026-05-05T00:19:44.833Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "28",
+      "object_repr": "Euphoria (Менеджер)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+      "action_time": "2026-05-05T00:21:17.035Z",
+      "user": ["admin"],
+      "content_type": ["core", "discipline"],
+      "object_id": "6",
+      "object_repr": "Chess",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+      "action_time": "2026-05-05T00:21:30.896Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "18",
+      "object_repr": "Гроссмейтер",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+      "action_time": "2026-05-05T00:21:38.833Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "29",
+      "object_repr": "Duhless (Гроссмейтер)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+      "action_time": "2026-05-05T00:22:41.838Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "30",
+      "object_repr": "Konevlad (Гроссмейтер)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+      "action_time": "2026-05-05T00:25:25.492Z",
+      "user": ["admin"],
+      "content_type": ["core", "discipline"],
+      "object_id": "7",
+      "object_repr": "Team Spirit Family",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+      "action_time": "2026-05-05T00:25:32.883Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "19",
+      "object_repr": "Пукич",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+      "action_time": "2026-05-05T00:27:12.300Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "31",
+      "object_repr": "Silvername (Пукич)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Silvername - Twitch\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Silvername - Instagram\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Silvername - VKontakte\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Silvername - Twitter/X\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Silvername - YouTube\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+      "action_time": "2026-05-05T00:36:14.105Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "20",
+      "object_repr": "Стример",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+      "action_time": "2026-05-05T00:36:34.683Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "32",
+      "object_repr": "Wycc (Стример)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+      "action_time": "2026-05-05T00:37:09.290Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "32",
+      "object_repr": "Wycc (Стример)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0411\\u0438\\u043e\\u0433\\u0440\\u0430\\u0444\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+      "action_time": "2026-05-05T00:38:59.176Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "33",
+      "object_repr": "Illidan (Стример)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+      "action_time": "2026-05-05T00:40:01.395Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "34",
+      "object_repr": "Scl'koma (Без роли)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+      "action_time": "2026-05-05T00:41:40.474Z",
+      "user": ["admin"],
+      "content_type": ["core", "role"],
+      "object_id": "21",
+      "object_repr": "Хост",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+      "action_time": "2026-05-05T00:41:48.523Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "35",
+      "object_repr": "Art1st (Хост)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+      "action_time": "2026-05-05T00:42:56.141Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "36",
+      "object_repr": "Nick (Хост)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+      "action_time": "2026-05-05T00:45:33.837Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "37",
+      "object_repr": "Mr_Glaider (Менеджер)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Mr_Glaider - Instagram\"}}, {\"added\": {\"name\": \"\\u0421\\u043e\\u0446. \\u0441\\u0435\\u0442\\u044c \\u0438\\u0433\\u0440\\u043e\\u043a\\u0430\", \"object\": \"Mr_Glaider - Twitter/X\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+      "action_time": "2026-05-05T00:46:10.187Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "37",
+      "object_repr": "Mr_Glaider (Менеджер)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+      "action_time": "2026-05-05T00:46:53.184Z",
+      "user": ["admin"],
+      "content_type": ["core", "player"],
+      "object_id": "34",
+      "object_repr": "Scl'koma (Без роли)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+      "action_time": "2026-05-05T01:25:29.343Z",
+      "user": ["admin"],
+      "content_type": ["core", "discipline"],
+      "object_id": "4",
+      "object_repr": "CS Academy",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043a\\u043e\\u043d\\u043a\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+      "action_time": "2026-05-05T01:27:27.478Z",
+      "user": ["admin"],
+      "content_type": ["core", "discipline"],
+      "object_id": "6",
+      "object_repr": "Chess",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043a\\u043e\\u043d\\u043a\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+      "action_time": "2026-05-05T01:28:59.498Z",
+      "user": ["admin"],
+      "content_type": ["core", "discipline"],
+      "object_id": "5",
+      "object_repr": "Mobile Legend:BB",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043a\\u043e\\u043d\\u043a\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+      "action_time": "2026-05-05T01:31:16.710Z",
+      "user": ["admin"],
+      "content_type": ["core", "discipline"],
+      "object_id": "7",
+      "object_repr": "Team Spirit Family",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043a\\u043e\\u043d\\u043a\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+      "action_time": "2026-05-05T01:32:40.394Z",
+      "user": ["admin"],
+      "content_type": ["core", "teaminfo"],
+      "object_id": "1",
+      "object_repr": "Team Spirit Info",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e \\u043a\\u043e\\u043c\\u0430\\u043d\\u0434\\u0435\", \"\\u041b\\u043e\\u0433\\u043e\\u0442\\u0438\\u043f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+      "action_time": "2026-05-05T01:33:00.533Z",
+      "user": ["admin"],
+      "content_type": ["core", "teaminfo"],
+      "object_id": "1",
+      "object_repr": "Team Spirit Info",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041b\\u043e\\u0433\\u043e\\u0442\\u0438\\u043f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+      "action_time": "2026-05-06T00:02:16.677Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "3",
+      "object_repr": "Интервью с Miposhka после победы на TI",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+      "action_time": "2026-05-06T00:02:20.393Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "2",
+      "object_repr": "Анонс нового состава по CS2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+      "action_time": "2026-05-06T00:02:24.493Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "1",
+      "object_repr": "Team Spirit побеждает на ESL One Bangkok",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+      "action_time": "2026-05-06T00:04:10.051Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "4",
+      "object_repr": "Team Spirit тестируют нового тренера в 2026 году",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+      "action_time": "2026-05-06T00:04:53.598Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "5",
+      "object_repr": "Korb3n назвал 2026 год «экспериментальным» для Team Spirit",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+      "action_time": "2026-05-06T00:05:26.649Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "6",
+      "object_repr": "Team Spirit вышли в плей-офф ESL One Birmingham 2026",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+      "action_time": "2026-05-06T00:06:02.450Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "7",
+      "object_repr": "Объявлены даты The International 2026",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+      "action_time": "2026-05-06T00:07:07.740Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "8",
+      "object_repr": "Korb3n допустил уход из Team Spirit после TI 2026",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+      "action_time": "2026-05-06T00:07:55.681Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "7",
+      "object_repr": "Объявлены даты      The International 2026",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u0433\\u043e\\u043b\\u043e\\u0432\\u043e\\u043a\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+      "action_time": "2026-05-06T00:14:47.143Z",
+      "user": ["admin"],
+      "content_type": ["core", "teaminfo"],
+      "object_id": "1",
+      "object_repr": "Team Spirit Info",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0428\\u0442\\u0430\\u0431-\\u043a\\u0432\\u0430\\u0440\\u0442\\u0438\\u0440\\u0430\", \"YouTube\", \"VK\", \"Telegram\", \"Email \\u0434\\u043b\\u044f \\u0441\\u0432\\u044f\\u0437\\u0438\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 118,
+    "fields": {
+      "action_time": "2026-05-06T00:27:50.913Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "8",
+      "object_repr": "Korb3n допустил уход из Team Spirit после TI 2026",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 119,
+    "fields": {
+      "action_time": "2026-05-06T00:27:54.896Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "7",
+      "object_repr": "Объявлены даты      The International 2026",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 120,
+    "fields": {
+      "action_time": "2026-05-06T00:27:58.738Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "6",
+      "object_repr": "Team Spirit вышли в плей-офф ESL One Birmingham 2026",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 121,
+    "fields": {
+      "action_time": "2026-05-06T00:28:02.979Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "5",
+      "object_repr": "Korb3n назвал 2026 год «экспериментальным» для Team Spirit",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 122,
+    "fields": {
+      "action_time": "2026-05-06T00:28:07.025Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "4",
+      "object_repr": "Team Spirit тестируют нового тренера в 2026 году",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 123,
+    "fields": {
+      "action_time": "2026-05-06T00:29:25.346Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "9",
+      "object_repr": "Team Spirit уверенно обыграли NAVI на групповом этапе",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 124,
+    "fields": {
+      "action_time": "2026-05-06T00:30:31.904Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "10",
+      "object_repr": "Yatoro стал MVP матча против Team Liquid",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 125,
+    "fields": {
+      "action_time": "2026-05-06T00:31:54.592Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "11",
+      "object_repr": "Team Spirit проиграли G2 в упорной борьбе",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 126,
+    "fields": {
+      "action_time": "2026-05-06T00:33:09.196Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "12",
+      "object_repr": "Miposhka рассказал о подготовке к турниру",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 127,
+    "fields": {
+      "action_time": "2026-05-06T00:34:16.152Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "13",
+      "object_repr": "Team Spirit анонсировали участие в новом турнире",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 128,
+    "fields": {
+      "action_time": "2026-05-06T00:35:36.970Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "14",
+      "object_repr": "Collapse вернулся к тренировкам с командой",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 129,
+    "fields": {
+      "action_time": "2026-05-06T00:36:42.010Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "15",
+      "object_repr": "Team Spirit вышли в плей-офф турнира",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 130,
+    "fields": {
+      "action_time": "2026-05-06T00:37:50.518Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "16",
+      "object_repr": "Yatoro рассказал о мете в новом патче",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 131,
+    "fields": {
+      "action_time": "2026-05-06T00:38:59.127Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "17",
+      "object_repr": "Team Spirit проиграли решающий матч группы",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 132,
+    "fields": {
+      "action_time": "2026-05-06T00:39:56.466Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "18",
+      "object_repr": "Team Spirit обновили тренировочный процесс",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 133,
+    "fields": {
+      "action_time": "2026-05-06T00:41:11.675Z",
+      "user": ["admin"],
+      "content_type": ["core", "news"],
+      "object_id": "18",
+      "object_repr": "Team Spirit обновили тренировочный процесс",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 134,
+    "fields": {
+      "action_time": "2026-05-06T00:43:04.155Z",
+      "user": ["admin"],
+      "content_type": ["core", "teaminfo"],
+      "object_id": "1",
+      "object_repr": "Team Spirit Info",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0411\\u0430\\u043d\\u043d\\u0435\\u0440\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 135,
+    "fields": {
+      "action_time": "2026-05-06T00:47:06.259Z",
+      "user": ["admin"],
+      "content_type": ["core", "achievement"],
+      "object_id": "3",
+      "object_repr": "Riyadh Masters 2023 - 1 место",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 136,
+    "fields": {
+      "action_time": "2026-05-06T00:48:17.722Z",
+      "user": ["admin"],
+      "content_type": ["core", "achievement"],
+      "object_id": "2",
+      "object_repr": "The International 2023 - 2 место",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 137,
+    "fields": {
+      "action_time": "2026-05-06T00:48:25.546Z",
+      "user": ["admin"],
+      "content_type": ["core", "achievement"],
+      "object_id": "2",
+      "object_repr": "The International 2023 - 2 место",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 138,
+    "fields": {
+      "action_time": "2026-05-06T00:48:47.469Z",
+      "user": ["admin"],
+      "content_type": ["core", "achievement"],
+      "object_id": "2",
+      "object_repr": "The International 2023 - 2 место",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 139,
+    "fields": {
+      "action_time": "2026-05-06T00:48:55.493Z",
+      "user": ["admin"],
+      "content_type": ["core", "achievement"],
+      "object_id": "2",
+      "object_repr": "The International 2023 - 2 место",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 140,
+    "fields": {
+      "action_time": "2026-05-06T00:49:42.530Z",
+      "user": ["admin"],
+      "content_type": ["core", "achievement"],
+      "object_id": "4",
+      "object_repr": "ESL One Berlin Major 2023 - 3 место",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 141,
+    "fields": {
+      "action_time": "2026-05-06T00:50:37.190Z",
+      "user": ["admin"],
+      "content_type": ["core", "achievement"],
+      "object_id": "4",
+      "object_repr": "ESL One Berlin Major 2023 - 3 место",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 142,
+    "fields": {
+      "action_time": "2026-05-06T00:52:18.538Z",
+      "user": ["admin"],
+      "content_type": ["core", "achievement"],
+      "object_id": "5",
+      "object_repr": "DreamLeague Season 19 - 1 место",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 143,
+    "fields": {
+      "action_time": "2026-05-06T00:52:40.425Z",
+      "user": ["admin"],
+      "content_type": ["core", "achievement"],
+      "object_id": "5",
+      "object_repr": "DreamLeague Season 19 - 1 место",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 144,
+    "fields": {
+      "action_time": "2026-05-06T00:55:09.811Z",
+      "user": ["admin"],
+      "content_type": ["core", "achievement"],
+      "object_id": "2",
+      "object_repr": "The International 2023 - 2 место",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 145,
+    "fields": {
+      "action_time": "2026-05-06T00:56:49.433Z",
+      "user": ["admin"],
+      "content_type": ["core", "achievement"],
+      "object_id": "1",
+      "object_repr": "The International 10 (2021) - 1 место",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 \\u0442\\u0443\\u0440\\u043d\\u0438\\u0440\\u0430\", \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 146,
+    "fields": {
+      "action_time": "2026-05-06T00:57:38.859Z",
+      "user": ["admin"],
+      "content_type": ["core", "achievement"],
+      "object_id": "3",
+      "object_repr": "Riyadh Masters 2023 - 1 место",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 147,
+    "fields": {
+      "action_time": "2026-05-06T00:58:06.824Z",
+      "user": ["admin"],
+      "content_type": ["core", "achievement"],
+      "object_id": "2",
+      "object_repr": "The International 2023 - 2 место",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 148,
+    "fields": {
+      "action_time": "2026-05-06T00:58:15.056Z",
+      "user": ["admin"],
+      "content_type": ["core", "achievement"],
+      "object_id": "1",
+      "object_repr": "The International 2021 - 1 место",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 \\u0442\\u0443\\u0440\\u043d\\u0438\\u0440\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 149,
+    "fields": {
+      "action_time": "2026-05-06T00:59:14.638Z",
+      "user": ["admin"],
+      "content_type": ["core", "achievement"],
+      "object_id": "2",
+      "object_repr": "The International 2023 - 1 место",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0435\\u0441\\u0442\\u043e\", \"\\u041f\\u0440\\u0438\\u0437\\u043e\\u0432\\u043e\\u0439 \\u0444\\u043e\\u043d\\u0434 ($)\", \"\\u0412\\u044b\\u0438\\u0433\\u0440\\u044b\\u0448 ($)\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 150,
+    "fields": {
+      "action_time": "2026-05-06T01:01:05.781Z",
+      "user": ["admin"],
+      "content_type": ["core", "achievement"],
+      "object_id": "5",
+      "object_repr": "DreamLeague Season 25 - 1 место",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 \\u0442\\u0443\\u0440\\u043d\\u0438\\u0440\\u0430\", \"\\u0412\\u044b\\u0438\\u0433\\u0440\\u044b\\u0448 ($)\", \"\\u0414\\u0430\\u0442\\u0430\", \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 151,
+    "fields": {
+      "action_time": "2026-05-06T01:01:15.067Z",
+      "user": ["admin"],
+      "content_type": ["core", "achievement"],
+      "object_id": "5",
+      "object_repr": "DreamLeague Season 25 - 1 место",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 152,
+    "fields": {
+      "action_time": "2026-05-06T01:02:15.376Z",
+      "user": ["admin"],
+      "content_type": ["core", "achievement"],
+      "object_id": "4",
+      "object_repr": "Esports World Cup 2025 - 1 место",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 \\u0442\\u0443\\u0440\\u043d\\u0438\\u0440\\u0430\", \"\\u041c\\u0435\\u0441\\u0442\\u043e\", \"\\u041f\\u0440\\u0438\\u0437\\u043e\\u0432\\u043e\\u0439 \\u0444\\u043e\\u043d\\u0434 ($)\", \"\\u0412\\u044b\\u0438\\u0433\\u0440\\u044b\\u0448 ($)\", \"\\u0414\\u0430\\u0442\\u0430\", \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 153,
+    "fields": {
+      "action_time": "2026-05-06T01:02:46.393Z",
+      "user": ["admin"],
+      "content_type": ["core", "achievement"],
+      "object_id": "4",
+      "object_repr": "Esports World Cup 2025 - 1 место",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 154,
+    "fields": {
+      "action_time": "2026-05-06T01:05:54.313Z",
+      "user": ["admin"],
+      "content_type": ["core", "partner"],
+      "object_id": "2",
+      "object_repr": "HyperX (Главный партнёр)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0440\\u044f\\u0434\\u043e\\u043a\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 155,
+    "fields": {
+      "action_time": "2026-05-06T01:06:09.894Z",
+      "user": ["admin"],
+      "content_type": ["core", "partner"],
+      "object_id": "3",
+      "object_repr": "ASUS ROG (Главный партнёр)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0440\\u044f\\u0434\\u043e\\u043a\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 156,
+    "fields": {
+      "action_time": "2026-05-06T01:10:35.099Z",
+      "user": ["admin"],
+      "content_type": ["core", "partner"],
+      "object_id": "6",
+      "object_repr": "BetBoom (Титульный спонсор)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 157,
+    "fields": {
+      "action_time": "2026-05-06T01:12:20.541Z",
+      "user": ["admin"],
+      "content_type": ["core", "partner"],
+      "object_id": "7",
+      "object_repr": "Nike (Титульный спонсор)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 158,
+    "fields": {
+      "action_time": "2026-05-06T01:14:26.018Z",
+      "user": ["admin"],
+      "content_type": ["core", "partner"],
+      "object_id": "8",
+      "object_repr": "Red Bull (Титульный спонсор)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 159,
+    "fields": {
+      "action_time": "2026-05-06T01:16:29.418Z",
+      "user": ["admin"],
+      "content_type": ["core", "partner"],
+      "object_id": "9",
+      "object_repr": "SecretLab (Титульный спонсор)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 160,
+    "fields": {
+      "action_time": "2026-05-06T01:16:38.681Z",
+      "user": ["admin"],
+      "content_type": ["core", "partner"],
+      "object_id": "1",
+      "object_repr": "PARI (Титульный спонсор)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 161,
+    "fields": {
+      "action_time": "2026-05-06T01:17:11.459Z",
+      "user": ["admin"],
+      "content_type": ["core", "partner"],
+      "object_id": "10",
+      "object_repr": "BetBoom (Главный партнёр)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 162,
+    "fields": {
+      "action_time": "2026-05-06T01:18:53.568Z",
+      "user": ["admin"],
+      "content_type": ["core", "partner"],
+      "object_id": "11",
+      "object_repr": "Parimatch (Главный партнёр)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 163,
+    "fields": {
+      "action_time": "2026-05-06T01:19:03.109Z",
+      "user": ["admin"],
+      "content_type": ["core", "partner"],
+      "object_id": "2",
+      "object_repr": "HyperX (Главный партнёр)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 164,
+    "fields": {
+      "action_time": "2026-05-06T01:19:11.331Z",
+      "user": ["admin"],
+      "content_type": ["core", "partner"],
+      "object_id": "3",
+      "object_repr": "ASUS ROG (Главный партнёр)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 165,
+    "fields": {
+      "action_time": "2026-05-06T01:22:18.409Z",
+      "user": ["admin"],
+      "content_type": ["core", "partner"],
+      "object_id": "12",
+      "object_repr": "Yandex Eats (Главный партнёр)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 166,
+    "fields": {
+      "action_time": "2026-05-06T01:24:06.738Z",
+      "user": ["admin"],
+      "content_type": ["core", "partner"],
+      "object_id": "13",
+      "object_repr": "Bitget (Главный партнёр)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 167,
+    "fields": {
+      "action_time": "2026-05-06T01:24:26.329Z",
+      "user": ["admin"],
+      "content_type": ["core", "partner"],
+      "object_id": "4",
+      "object_repr": "Red Bull (Официальный партнёр)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 168,
+    "fields": {
+      "action_time": "2026-05-06T01:25:36.087Z",
+      "user": ["admin"],
+      "content_type": ["core", "partner"],
+      "object_id": "10",
+      "object_repr": "BetBoom (Главный партнёр)",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 169,
+    "fields": {
+      "action_time": "2026-05-06T01:28:43.407Z",
+      "user": ["admin"],
+      "content_type": ["core", "partner"],
+      "object_id": "14",
+      "object_repr": "JetTravel (Официальный партнёр)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 170,
+    "fields": {
+      "action_time": "2026-05-06T01:31:08.764Z",
+      "user": ["admin"],
+      "content_type": ["core", "partner"],
+      "object_id": "15",
+      "object_repr": "InScope Consulting (Официальный партнёр)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 171,
+    "fields": {
+      "action_time": "2026-05-06T01:32:04.088Z",
+      "user": ["admin"],
+      "content_type": ["core", "partner"],
+      "object_id": "5",
+      "object_repr": "Secretlab (Технический партнёр)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041b\\u043e\\u0433\\u043e\\u0442\\u0438\\u043f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 172,
+    "fields": {
+      "action_time": "2026-05-06T01:34:04.503Z",
+      "user": ["admin"],
+      "content_type": ["core", "partner"],
+      "object_id": "16",
+      "object_repr": "ASUS ROG (Технический партнёр)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 173,
+    "fields": {
+      "action_time": "2026-05-07T17:30:20.664Z",
+      "user": ["admin"],
+      "content_type": ["core", "match"],
+      "object_id": "6",
+      "object_repr": "Team Spirit vs Tundra Esports (DreamLeague Season 24)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 174,
+    "fields": {
+      "action_time": "2026-05-07T17:30:25.274Z",
+      "user": ["admin"],
+      "content_type": ["core", "match"],
+      "object_id": "5",
+      "object_repr": "Team Spirit vs Team Liquid (DreamLeague Season 24)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 175,
+    "fields": {
+      "action_time": "2026-05-07T17:30:28.509Z",
+      "user": ["admin"],
+      "content_type": ["core", "match"],
+      "object_id": "7",
+      "object_repr": "Team Spirit vs OG (ESL One Bangkok)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 176,
+    "fields": {
+      "action_time": "2026-05-07T17:30:31.748Z",
+      "user": ["admin"],
+      "content_type": ["core", "match"],
+      "object_id": "8",
+      "object_repr": "Team Spirit vs BetBoom Team (ESL One Bangkok)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 177,
+    "fields": {
+      "action_time": "2026-05-07T17:30:34.491Z",
+      "user": ["admin"],
+      "content_type": ["core", "match"],
+      "object_id": "2",
+      "object_repr": "Team Spirit vs Tundra Esports (DreamLeague Season 24)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 178,
+    "fields": {
+      "action_time": "2026-05-07T17:30:37.354Z",
+      "user": ["admin"],
+      "content_type": ["core", "match"],
+      "object_id": "1",
+      "object_repr": "Team Spirit vs Team Liquid (DreamLeague Season 24)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 179,
+    "fields": {
+      "action_time": "2026-05-07T17:30:40.274Z",
+      "user": ["admin"],
+      "content_type": ["core", "match"],
+      "object_id": "3",
+      "object_repr": "Team Spirit vs OG (ESL One Bangkok)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 180,
+    "fields": {
+      "action_time": "2026-05-07T17:30:44.343Z",
+      "user": ["admin"],
+      "content_type": ["core", "match"],
+      "object_id": "4",
+      "object_repr": "Team Spirit vs BetBoom Team (ESL One Bangkok)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 181,
+    "fields": {
+      "action_time": "2026-05-07T17:38:18.573Z",
+      "user": ["admin"],
+      "content_type": ["core", "match"],
+      "object_id": "9",
+      "object_repr": "Team Spirit vs Team Falcons (PGL Wallachia Season 8)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 182,
+    "fields": {
+      "action_time": "2026-05-07T17:41:06.190Z",
+      "user": ["admin"],
+      "content_type": ["core", "match"],
+      "object_id": "10",
+      "object_repr": "Team Spirit vs BetBoom Team (PGL Wallachia Season 8)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 183,
+    "fields": {
+      "action_time": "2026-05-07T17:44:43.395Z",
+      "user": ["admin"],
+      "content_type": ["core", "match"],
+      "object_id": "11",
+      "object_repr": "Team Spirit vs Xtreme Gaming (PGL Wallachia Season 8)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 184,
+    "fields": {
+      "action_time": "2026-05-07T17:49:11.792Z",
+      "user": ["admin"],
+      "content_type": ["core", "match"],
+      "object_id": "12",
+      "object_repr": "Team Spirit vs Natus Vincere (PGL Wallachia Season 8)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 185,
+    "fields": {
+      "action_time": "2026-05-07T17:53:22.124Z",
+      "user": ["admin"],
+      "content_type": ["core", "match"],
+      "object_id": "13",
+      "object_repr": "Team Spirit vs GamerLegion (PGL Wallachia Season 8)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 186,
+    "fields": {
+      "action_time": "2026-05-07T18:05:02.358Z",
+      "user": ["admin"],
+      "content_type": ["core", "match"],
+      "object_id": "14",
+      "object_repr": "Team Spirit vs Team Falcons (PGL Wallachia Season 8)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 187,
+    "fields": {
+      "action_time": "2026-05-07T18:06:07.799Z",
+      "user": ["admin"],
+      "content_type": ["core", "match"],
+      "object_id": "15",
+      "object_repr": "Team Spirit vs Vici Gaming (PGL Wallachia Season 8)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 188,
+    "fields": {
+      "action_time": "2026-05-07T18:07:59.537Z",
+      "user": ["admin"],
+      "content_type": ["core", "match"],
+      "object_id": "16",
+      "object_repr": "Team Spirit vs GamerLegion (PREMIER SERIES)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 189,
+    "fields": {
+      "action_time": "2026-05-07T18:08:05.166Z",
+      "user": ["admin"],
+      "content_type": ["core", "match"],
+      "object_id": "15",
+      "object_repr": "Team Spirit vs Vici Gaming (PGL Wallachia Season 8)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 190,
+    "fields": {
+      "action_time": "2026-05-07T18:10:06.592Z",
+      "user": ["admin"],
+      "content_type": ["core", "match"],
+      "object_id": "17",
+      "object_repr": "Team Spirit vs Nigma Galaxy (PREMIER SERIES)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   }
 ]
